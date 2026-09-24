@@ -226,17 +226,21 @@ DataTable ─┬─ DT_CharacterStats
   function open(id,btn){
     const d=D[id];q('mk2').textContent=d.k;q('mt').textContent=d.t;q('mm').textContent=d.m;
     q('mbd').innerHTML=q('tp-'+id).innerHTML;q('mfl').innerHTML=q('ar-'+id).innerHTML;     const bp=q('mbd').querySelector('.bp');md.classList.toggle('wide',!!bp);     if(bp){const L=JSON.parse(bp.dataset.links),svg=bp.querySelector('.bw');       const off=el=>{let x=0,y=0;while(el&&el!==bp){x+=el.offsetLeft;y+=el.offsetTop;el=el.offsetParent}return[x,y]};       svg.innerHTML=L.map(([a,b,c])=>{const A=bp.querySelector('[data-out="'+a+'"]'),B=bp.querySelector('[data-in="'+b+'"]');if(!A||!B)return'';         const [ax,ay]=off(A),[bx,by]=off(B),x1=ax+A.offsetWidth,y1=ay+A.offsetHeight/2,x2=bx,y2=by+B.offsetHeight/2,dx=Math.max(50,Math.abs(x2-x1)*.5);         return '<path class="'+c+'" d="M'+x1+','+y1+' C'+(x1+dx)+','+y1+' '+(x2-dx)+','+y2+' '+x2+','+y2+'"/>'}).join('');} 
-    const scrolls=document.documentElement.scrollHeight>innerHeight+40&&innerHeight<1400;
-    ov.classList.toggle('abs',!scrolls);
-    if(!scrolls){const pg=document.getElementById('pg');ov.style.height=pg.scrollHeight+'px';
-      const t=Math.max(20,Math.min(btn.offsetTop+btn.offsetParent.offsetTop-120,pg.scrollHeight-md.offsetHeight-40));md.style.top=t+'px';}
-    else md.style.top='';
+    ov.classList.remove('abs');md.style.top='';ov.scrollTop=0;document.body.classList.add('lock');
     requestAnimationFrame(()=>ov.classList.add('show'));
   }
-  function close(){ov.classList.remove('show')}
+  function close(){ov.classList.remove('show');document.body.classList.remove('lock')}
   document.querySelectorAll('.isl').forEach(b=>b.addEventListener('click',()=>open(b.dataset.isl,b)));
   q('x').addEventListener('click',close);ov.addEventListener('click',e=>{if(e.target===ov)close()});
   addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 })();
 </script>
+<style>
+/* 서브페이지 스크롤 */
+.ov{overflow-y:auto;overscroll-behavior:contain}
+.ov .md,.ov:not(.abs) .md,.ov.show:not(.abs) .md{position:relative;left:auto;top:auto!important;margin:48px auto 60px;transform:translateY(24px) scale(.94)}
+.ov.show .md,.ov.show:not(.abs) .md{transform:none}
+.ov .md.wide{margin-left:auto;margin-right:auto}
+body.lock{overflow:hidden}
+</style>
 </body></html>
