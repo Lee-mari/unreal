@@ -310,10 +310,11 @@ code{font-family:"IBM Plex Mono";font-size:12.5px;background:#f1e9fa;border-radi
     <div class="mh"><svg class="bg" viewBox="0 0 780 230" preserveAspectRatio="xMidYMid slice"><g transform="translate(330 40) scale(0.5 0.5)" class="cl"><g fill="none" stroke="#5b4a7a" stroke-width="6.4"><circle cx="0" cy="0" r="22"/><circle cx="26" cy="-12" r="28"/><circle cx="58" cy="-6" r="24"/><circle cx="84" cy="4" r="18"/><circle cx="40" cy="10" r="22"/><circle cx="-20" cy="8" r="16"/><circle cx="104" cy="12" r="12"/></g><g fill="#fff"><circle cx="0" cy="0" r="22"/><circle cx="26" cy="-12" r="28"/><circle cx="58" cy="-6" r="24"/><circle cx="84" cy="4" r="18"/><circle cx="40" cy="10" r="22"/><circle cx="-20" cy="8" r="16"/><circle cx="104" cy="12" r="12"/></g></g><path class="sp" transform="translate(420 150) scale(0.8)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2 Z" fill="#fff0b3" stroke="#5b4a7a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path class="sp" transform="translate(700 200) scale(0.6)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2 Z" fill="#fff" stroke="#5b4a7a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="fl" id="mfl"></div><div class="tx"><span class="k" id="mk2"></span><h2 id="mt"></h2><div class="m" id="mm"></div></div></div>
     <div class="mbd" id="mbd"></div></div></div>
-  <template id="tp-gohome"><div class="bpw"><div class="bph"><span>BP_GoHome · Event Graph</span><span class="mu">노드를 따라가면 내가 만든 시스템이 보여요</span></div><div class="bp" data-links='[["e1", "n2", "f"], ["o2", "bi", "f"], ["bt", "hp", "f"], ["wo", "wi", "d"], ["mo", "mi", "d"], ["ox", "ui1", "d"], ["wu", "ui2", "d"]]'><svg class="bw"></svg><div class="bn" style="left:14px;top:34px;width:150px;--c:#fff0ad"><div class="bh"><span>◆</span>Event 잠수 시작</div><div class="bb"><div class="br"><span class="sp"><i class="px" data-out="e1"></i></span></div></div></div><div class="bn" style="left:258px;top:14px;width:232px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>OxygenComponent<em>CODE</em></div><div class="bb"><b class="bt2">산소</b><div class="br"><i class="px" data-in="n2"></i><span class="mu">흐름</span><span class="sp"><i class="px" data-out="o2"></i></span></div><div class="br">안전지대 밖 <span class="mu">초마다 감소</span><span class="sp">✓</span></div><div class="br">SafeZone 안 <span class="mu">초마다 회복</span><span class="sp">✓</span></div><div class="br">몬스터 물기 <span class="mu">DataAsset 속도</span><span class="sp">✓</span></div><div class="br"><i class="pd" data-in="wi" style="--pc:#ffdcbc"></i><span class="mu">추가 소모</span><span class="sp"></span></div><div class="br"><i class="pd" data-in="mi" style="--pc:#c6efda"></i><span class="mu">MaxOxygen</span><span class="sp"><span class="mu">현재 O₂</span><i class="pd" data-out="ox" style="--pc:#bfe3ff"></i></span></div></div></div><div class="bn" style="left:516px;top:22px;width:176px;--c:#dccbf7"><div class="bh"><span>◇</span>Branch · 산소 = 0 ?</div><div class="bb"><div class="br"><i class="px" data-in="bi"></i><span class="sp">True <i class="px" data-out="bt"></i></span></div><div class="br"><span class="sp">False <i class="px" data-out="bf"></i></span></div></div></div><div class="bn" style="left:516px;top:146px;width:176px;--c:#ffc8dd"><div class="bh"><span>ƒ</span>HP 초마다 급감</div><div class="bb"><div class="br"><i class="px" data-in="hp"></i><span class="mu">물기 = 직접 피해</span><span class="sp"></span></div></div></div><div class="bn" style="left:14px;top:150px;width:214px;--c:#ffdcbc"><div class="bh"><span>ƒ</span>WeightSystem<em>CODE</em></div><div class="bb"><b class="bt2">무게</b><div class="br">아이템 무게 합산<span class="sp">✓</span></div><div class="br">기준 초과분 → Curve<span class="sp"><i class="pd" data-out="wo" style="--pc:#ffdcbc"></i></span></div><div class="br"><span class="mu">UI로 보내기</span><span class="sp"><i class="pd" data-out="wu" style="--pc:#ffdcbc"></i></span></div></div></div><div class="bn" style="left:14px;top:330px;width:214px;--c:#c6efda"><div class="bh"><span>ƒ</span>Upgrade Station<em>CODE</em></div><div class="bb"><b class="bt2">강화</b><div class="br">상호작용 → 강화 UI<span class="sp">✓</span></div><div class="br">서버 요청 (RPC)<span class="sp">✓</span></div><div class="br"><span class="mu">최대 산소 +</span><span class="sp"><i class="pd" data-out="mo" style="--pc:#c6efda"></i></span></div></div></div><div class="bn" style="left:516px;top:262px;width:176px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>HUD · UMG<em>UI</em></div><div class="bb"><b class="bt2">UI</b><div class="br"><i class="pd" data-in="ui1" style="--pc:#bfe3ff"></i>산소 바<span class="sp"></span></div><div class="br"><i class="pd" data-in="ui2" style="--pc:#ffdcbc"></i>현재 / 기준 + 초과<span class="sp"></span></div><div class="br">강화 창<span class="sp">✓</span></div></div></div><div class="bc" style="left:258px;top:318px;width:232px;height:140px"><b>// 트러블슈팅</b><p><em>문제</em> 밸런스를 바꿀 때마다 코드 수정</p><p><em>원인</em> 무게 계산식이 코드에 고정</p><p><em>해결</em> Curve 에셋 → 에디터에서 조절</p></div><div class="bn" style="left:258px;top:480px;width:232px;--c:#fff0ad"><div class="bh"><span>▤</span>GDD · 기본 기획<em>DESIGN</em></div><div class="bb"><div class="br">핵심 규칙 문서 작성<span class="sp">✓</span></div></div></div><div class="bn" style="left:516px;top:450px;width:176px;--c:#ffffff"><div class="bh"><span>▶</span>Play · 영상 보기</div><div class="bb"><div class="br"><i class="px" data-in="pl"></i><span class="mu">30–60초 플레이 영상</span><span class="sp"></span></div></div></div></div><div class="bpl"><span><i class="px"></i> 실행 흐름</span><span><i class="pd" style="--pc:#ffc8dd"></i> 데이터</span><span class="tg">CODE · UI · DESIGN = 내가 맡은 부분</span></div></div><div class="mb"><span class="btn p">▶ 플레이 영상</span><span class="btn">GitHub ↗</span><span class="btn">기획서 PDF</span></div></template><template id="tp-lostark"><section class="mblk"><h4>내가 맡은 것</h4><ul class="ml"><li>레퍼런스 게임 맵 분석</li><li>맵 흐름 · 동선 설계</li><li>시야 · 랜드마크 배치</li><li>블록아웃 → 디테일</li></ul></section><section class="mblk"><h4>레벨 디자인 포인트</h4><div class="pts"><div><b>01</b>동선<small>길을 잃지 않게 큰 흐름부터</small></div><div><b>02</b>시야<small>멀리서도 목표가 보이게</small></div><div><b>03</b>리듬<small>전투 · 휴식 구간 번갈아</small></div></div></section><div class="shots"><div>탑뷰 맵</div><div>블록아웃</div><div>완성 장면</div></div><div class="mb"><span class="btn p">레벨 디자인 노트 →</span><span class="btn">영상 보기</span></div></template><template id="tp-mini1"><div class="shelf"><div class="sh2"><b>GAME SHELF</b><span>배운 문법 하나로 게임 하나씩 · 새 카트리지가 계속 꽂혀요</span></div><div class="carts"><div class="cart on" data-post=if01 title=읽기><div class="lab"><small>LV.01</small><b>if문 갈림길 게임</b><span>if / else</span></div><em>✓ CLEAR</em></div><div class="cart on new" data-post=for01 title=읽기><div class="lab"><small>LV.02</small><b>인벤토리 검사</b><span>for 문 + 배열</span></div><em>✓ CLEAR</em><i class="newb">NEW</i></div><div class="cart"><div class="lab"><small>LV.03</small><b>배열 게임</b><span>array</span></div><em>NEXT UP</em></div><div class="cart"><div class="lab"><small>LV.??</small><b>???</b><span>다음 문법</span></div><em>LOCKED</em></div></div><div class=morebar><span class=more data-lib>MORE · 전체 미니게임 12 →</span></div></div><section class="mblk"><h4>NEW · LV.02 미리보기</h4><pre>for (int i = 0; i &lt; 6; i++)            <span style="color:#b0739a">// 0번 칸부터 5번 칸까지</span>
-{
-    if (inventory[i] == 0) printf_s("%d번 ...비어있어요\n", i);
-}</pre></section><div class="mb"><span class="btn p" data-post="for01">LV.02 포트폴리오 읽기 →</span><span class="btn" data-post="if01">LV.01 읽기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-about"><section class="mblk"><h4>안녕하세요, mari예요</h4><p class="mp">레벨을 그린다는 건, 누군가 걸어갈 길을 만드는 일이라고 생각해요. 경일게임아카데미에서 언리얼을 배우며 맵의 흐름을 설계하고, 산소 · 무게 · 강화 같은 시스템을 C++로 직접 움직이게 만들고 있어요.</p></section><section class="mblk"><h4>스탯</h4><div class="bars"><div><span>레벨 디자인</span><i><b style="width:80%"></b></i></div><div><span>Blueprint</span><i><b style="width:60%"></b></i></div><div><span>UE C++</span><i><b style="width:60%"></b></i></div><div><span>UI (UMG)</span><i><b style="width:60%"></b></i></div><div><span>기획서</span><i><b style="width:80%"></b></i></div></div></section><section class="mblk"><h4>가방 속 도구</h4><div><span class="chip">레벨 디자인</span><span class="chip">UE5</span><span class="chip">C++</span><span class="chip">Blueprint</span><span class="chip">UMG</span><span class="chip">Git</span><span class="chip">기획서</span></div></section><div class="mb"><span class="btn p">이력서 PDF ↓</span><span class="btn">GitHub ↗</span></div></template><template id="tp-contact"><section class="mblk"><h4>편지함</h4><div class="lks"><div class="lk"><span>GitHub</span><b>Lee-mari ↗</b></div><div class="lk"><span>Blog</span><b>Lee-mari.github.io/unreal</b></div><div class="lk"><span>Mail</span><b>메일 주소</b></div><div class="lk"><span>Resume</span><b>PDF ↓</b></div></div></section><section class="mblk"><h4>한마디</h4><p class="mp">같이 게임을 만들고 싶거나, 궁금한 게 있으면 편하게 편지 주세요!</p></section><div class="mb"><span class="btn p">✉ 편지 보내기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-fps"><div class="hudx"><div class="hbar"><span>LOADOUT</span><span>숫자 키 1–5로 무기 교체</span></div><div class="slots5"><div><kbd>1</kbd><b>나이프</b><i style="width:calc((100% - 20px) * 0.2)"></i></div><div><kbd>2</kbd><b>권총</b><i style="width:calc((100% - 20px) * 0.4)"></i></div><div class=on><kbd>3</kbd><b>AK</b><i style="width:calc((100% - 20px) * 0.6)"></i></div><div><kbd>4</kbd><b>스나이퍼</b><i style="width:calc((100% - 20px) * 0.8)"></i></div><div><kbd>5</kbd><b>수류탄</b><i style="width:calc((100% - 20px) * 1.0)"></i></div></div><div class="hrow"><div class="tri"><svg viewBox="-14 -6 248 184"><path d="M110 18 L200 150 L20 150 Z" fill="none" stroke="#5b4a7a" stroke-width="1.6" stroke-dasharray="4 5"/><circle cx="110" cy="22" r="22" fill="#bfe3ff" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="200" cy="146" r="22" fill="#c6efda" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="20" cy="146" r="22" fill="#ffc8dd" stroke="#5b4a7a" stroke-width="1.6"/><text x="110" y="26" text-anchor="middle">플레이어</text><text x="200" y="150" text-anchor="middle">좀비</text><text x="20" y="150" text-anchor="middle">인간 AI</text></svg><small>3개 세력 생태계</small></div><div class="feats"><div><b>⟲ 시간 되감기</b><span>되감기 메커닉</span></div><div><b>▦ Chaos Destruction</b><span>부서지는 환경</span></div><div><b>≋ 스태미나</b><span>달리기 · 행동 소모</span></div></div></div><div class="tree"><div class="hbar"><span>ARCHITECTURE</span><span>C++ 구조</span></div><pre>AWeaponBase ─┬─ Knife · Pistol · AK · Sniper · Grenade
+  <template id="tp-gohome"><div class="bpw"><div class="bph"><span>BP_GoHome · Event Graph</span><span class="mu">노드를 따라가면 내가 만든 시스템이 보여요</span></div><div class="bp" data-links='[["e1", "n2", "f"], ["o2", "bi", "f"], ["bt", "hp", "f"], ["wo", "wi", "d"], ["mo", "mi", "d"], ["ox", "ui1", "d"], ["wu", "ui2", "d"]]'><svg class="bw"></svg><div class="bn" style="left:14px;top:34px;width:150px;--c:#fff0ad"><div class="bh"><span>◆</span>Event 잠수 시작</div><div class="bb"><div class="br"><span class="sp"><i class="px" data-out="e1"></i></span></div></div></div><div class="bn" style="left:258px;top:14px;width:232px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>OxygenComponent<em>CODE</em></div><div class="bb"><b class="bt2">산소</b><div class="br"><i class="px" data-in="n2"></i><span class="mu">흐름</span><span class="sp"><i class="px" data-out="o2"></i></span></div><div class="br">안전지대 밖 <span class="mu">초마다 감소</span><span class="sp">✓</span></div><div class="br">SafeZone 안 <span class="mu">초마다 회복</span><span class="sp">✓</span></div><div class="br">몬스터 물기 <span class="mu">DataAsset 속도</span><span class="sp">✓</span></div><div class="br"><i class="pd" data-in="wi" style="--pc:#ffdcbc"></i><span class="mu">추가 소모</span><span class="sp"></span></div><div class="br"><i class="pd" data-in="mi" style="--pc:#c6efda"></i><span class="mu">MaxOxygen</span><span class="sp"><span class="mu">현재 O₂</span><i class="pd" data-out="ox" style="--pc:#bfe3ff"></i></span></div></div></div><div class="bn" style="left:516px;top:22px;width:176px;--c:#dccbf7"><div class="bh"><span>◇</span>Branch · 산소 = 0 ?</div><div class="bb"><div class="br"><i class="px" data-in="bi"></i><span class="sp">True <i class="px" data-out="bt"></i></span></div><div class="br"><span class="sp">False <i class="px" data-out="bf"></i></span></div></div></div><div class="bn" style="left:516px;top:146px;width:176px;--c:#ffc8dd"><div class="bh"><span>ƒ</span>HP 초마다 급감</div><div class="bb"><div class="br"><i class="px" data-in="hp"></i><span class="mu">물기 = 직접 피해</span><span class="sp"></span></div></div></div><div class="bn" style="left:14px;top:150px;width:214px;--c:#ffdcbc"><div class="bh"><span>ƒ</span>WeightSystem<em>CODE</em></div><div class="bb"><b class="bt2">무게</b><div class="br">아이템 무게 합산<span class="sp">✓</span></div><div class="br">기준 초과분 → Curve<span class="sp"><i class="pd" data-out="wo" style="--pc:#ffdcbc"></i></span></div><div class="br"><span class="mu">UI로 보내기</span><span class="sp"><i class="pd" data-out="wu" style="--pc:#ffdcbc"></i></span></div></div></div><div class="bn" style="left:14px;top:330px;width:214px;--c:#c6efda"><div class="bh"><span>ƒ</span>Upgrade Station<em>CODE</em></div><div class="bb"><b class="bt2">강화</b><div class="br">상호작용 → 강화 UI<span class="sp">✓</span></div><div class="br">서버 요청 (RPC)<span class="sp">✓</span></div><div class="br"><span class="mu">최대 산소 +</span><span class="sp"><i class="pd" data-out="mo" style="--pc:#c6efda"></i></span></div></div></div><div class="bn" style="left:516px;top:262px;width:176px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>HUD · UMG<em>UI</em></div><div class="bb"><b class="bt2">UI</b><div class="br"><i class="pd" data-in="ui1" style="--pc:#bfe3ff"></i>산소 바<span class="sp"></span></div><div class="br"><i class="pd" data-in="ui2" style="--pc:#ffdcbc"></i>현재 / 기준 + 초과<span class="sp"></span></div><div class="br">강화 창<span class="sp">✓</span></div></div></div><div class="bc" style="left:258px;top:318px;width:232px;height:140px"><b>// 트러블슈팅</b><p><em>문제</em> 밸런스를 바꿀 때마다 코드 수정</p><p><em>원인</em> 무게 계산식이 코드에 고정</p><p><em>해결</em> Curve 에셋 → 에디터에서 조절</p></div><div class="bn" style="left:258px;top:480px;width:232px;--c:#fff0ad"><div class="bh"><span>▤</span>GDD · 기본 기획<em>DESIGN</em></div><div class="bb"><div class="br">핵심 규칙 문서 작성<span class="sp">✓</span></div></div></div><div class="bn" style="left:516px;top:450px;width:176px;--c:#ffffff"><div class="bh"><span>▶</span>Play · 영상 보기</div><div class="bb"><div class="br"><i class="px" data-in="pl"></i><span class="mu">30–60초 플레이 영상</span><span class="sp"></span></div></div></div></div><div class="bpl"><span><i class="px"></i> 실행 흐름</span><span><i class="pd" style="--pc:#ffc8dd"></i> 데이터</span><span class="tg">CODE · UI · DESIGN = 내가 맡은 부분</span></div></div><div class="mb"><span class="btn p">▶ 플레이 영상</span><span class="btn">GitHub ↗</span><span class="btn">기획서 PDF</span></div></template><template id="tp-lostark"><section class="mblk"><h4>내가 맡은 것</h4><ul class="ml"><li>레퍼런스 게임 맵 분석</li><li>맵 흐름 · 동선 설계</li><li>시야 · 랜드마크 배치</li><li>블록아웃 → 디테일</li></ul></section><section class="mblk"><h4>레벨 디자인 포인트</h4><div class="pts"><div><b>01</b>동선<small>길을 잃지 않게 큰 흐름부터</small></div><div><b>02</b>시야<small>멀리서도 목표가 보이게</small></div><div><b>03</b>리듬<small>전투 · 휴식 구간 번갈아</small></div></div></section><div class="shots"><div>탑뷰 맵</div><div>블록아웃</div><div>완성 장면</div></div><div class="mb"><span class="btn p">레벨 디자인 노트 →</span><span class="btn">영상 보기</span></div></template><template id="tp-mini1"><div class="shelf"><div class="sh2"><b>GAME SHELF</b><span>배운 문법 하나로 게임 하나씩 · 새 카트리지가 계속 꽂혀요</span></div><div class="carts"><div class="cart on" data-post=if01 title=읽기><div class="lab"><small>LV.01</small><b>if문 갈림길 게임</b><span>if / else</span></div><em>✓ CLEAR</em></div><div class="cart on" data-post=for01 title=읽기><div class="lab"><small>LV.02</small><b>인벤토리 검사</b><span>for 문 + 배열</span></div><em>✓ CLEAR</em></div><div class="cart"><div class="lab"><small>LV.03</small><b>배열 게임</b><span>array</span></div><em>NEXT UP</em></div><div class="cart on new ue" data-post=ammo01 title=읽기><div class="lab"><small>LV.09 · UNREAL</small><b>총알 재장전</b><span>BP · 변수 + 연산자</span></div><em>✓ CLEAR</em><i class="newb">NEW</i></div></div><div class=morebar><span class=more data-lib>MORE · 전체 미니게임 13 →</span></div></div><section class="mblk"><h4>NEW · LV.09 미리보기 · UNREAL</h4><pre>🖱️ 좌클릭 → Branch (CurrentAmmo &gt; 0)          <span style="color:#b0739a">// 총알 있나?</span>
+   ├ True  → SET CurrentAmmo = CurrentAmmo − 1 → Print
+   └ False → (멈춤)                         <span style="color:#b0739a">// 음수 방지</span>
+⌨️ R     → Branch (CurrentAmmo == MaxAmmo)   <span style="color:#b0739a">// 꽉 찼나?</span>
+   └ False → SET CurrentAmmo = MaxAmmo → Print "장전 완료"</pre></section><div class="mb"><span class="btn p" data-post="ammo01">LV.09 포트폴리오 읽기 →</span><span class="btn" data-post="for01">LV.02 읽기</span><span class="btn" data-post="if01">LV.01 읽기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-about"><section class="mblk"><h4>안녕하세요, mari예요</h4><p class="mp">레벨을 그린다는 건, 누군가 걸어갈 길을 만드는 일이라고 생각해요. 경일게임아카데미에서 언리얼을 배우며 맵의 흐름을 설계하고, 산소 · 무게 · 강화 같은 시스템을 C++로 직접 움직이게 만들고 있어요.</p></section><section class="mblk"><h4>스탯</h4><div class="bars"><div><span>레벨 디자인</span><i><b style="width:80%"></b></i></div><div><span>Blueprint</span><i><b style="width:60%"></b></i></div><div><span>UE C++</span><i><b style="width:60%"></b></i></div><div><span>UI (UMG)</span><i><b style="width:60%"></b></i></div><div><span>기획서</span><i><b style="width:80%"></b></i></div></div></section><section class="mblk"><h4>가방 속 도구</h4><div><span class="chip">레벨 디자인</span><span class="chip">UE5</span><span class="chip">C++</span><span class="chip">Blueprint</span><span class="chip">UMG</span><span class="chip">Git</span><span class="chip">기획서</span></div></section><div class="mb"><span class="btn p">이력서 PDF ↓</span><span class="btn">GitHub ↗</span></div></template><template id="tp-contact"><section class="mblk"><h4>편지함</h4><div class="lks"><div class="lk"><span>GitHub</span><b>Lee-mari ↗</b></div><div class="lk"><span>Blog</span><b>Lee-mari.github.io/unreal</b></div><div class="lk"><span>Mail</span><b>메일 주소</b></div><div class="lk"><span>Resume</span><b>PDF ↓</b></div></div></section><section class="mblk"><h4>한마디</h4><p class="mp">같이 게임을 만들고 싶거나, 궁금한 게 있으면 편하게 편지 주세요!</p></section><div class="mb"><span class="btn p">✉ 편지 보내기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-fps"><div class="hudx"><div class="hbar"><span>LOADOUT</span><span>숫자 키 1–5로 무기 교체</span></div><div class="slots5"><div><kbd>1</kbd><b>나이프</b><i style="width:calc((100% - 20px) * 0.2)"></i></div><div><kbd>2</kbd><b>권총</b><i style="width:calc((100% - 20px) * 0.4)"></i></div><div class=on><kbd>3</kbd><b>AK</b><i style="width:calc((100% - 20px) * 0.6)"></i></div><div><kbd>4</kbd><b>스나이퍼</b><i style="width:calc((100% - 20px) * 0.8)"></i></div><div><kbd>5</kbd><b>수류탄</b><i style="width:calc((100% - 20px) * 1.0)"></i></div></div><div class="hrow"><div class="tri"><svg viewBox="-14 -6 248 184"><path d="M110 18 L200 150 L20 150 Z" fill="none" stroke="#5b4a7a" stroke-width="1.6" stroke-dasharray="4 5"/><circle cx="110" cy="22" r="22" fill="#bfe3ff" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="200" cy="146" r="22" fill="#c6efda" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="20" cy="146" r="22" fill="#ffc8dd" stroke="#5b4a7a" stroke-width="1.6"/><text x="110" y="26" text-anchor="middle">플레이어</text><text x="200" y="150" text-anchor="middle">좀비</text><text x="20" y="150" text-anchor="middle">인간 AI</text></svg><small>3개 세력 생태계</small></div><div class="feats"><div><b>⟲ 시간 되감기</b><span>되감기 메커닉</span></div><div><b>▦ Chaos Destruction</b><span>부서지는 환경</span></div><div><b>≋ 스태미나</b><span>달리기 · 행동 소모</span></div></div></div><div class="tree"><div class="hbar"><span>ARCHITECTURE</span><span>C++ 구조</span></div><pre>AWeaponBase ─┬─ Knife · Pistol · AK · Sniper · Grenade
 UCombatComponent ── 플레이어 · AI 공용
 UHealthComponent ── ApplyDamage() / IsDead()
 DataTable ─┬─ DT_CharacterStats
@@ -463,7 +464,7 @@ cin &gt;&gt; choice;
 <div><b>▲ 다음엔</b><p>틀리면 끝나지 않고, <b>맞힐 때까지 계속 묻게</b> 만들고 싶다 → LV.02 반복문!</p></div></div></section><div class="endnav"><span class="btn" data-back>← 미니게임 선반으로</span><span class="btn p" data-post="for01">다음 글 · LV.02 인벤토리 검사 →</span></div></div></div></template><script>
 (function(){
   const q=id=>document.getElementById(id),md=q('md');
-  const POST={if01:{k:'BONUS · LV.01 · 포트폴리오',t:'갈림길 게임',m:'C++ · if / else · 콘솔 미니게임'},for01:{k:'BONUS · LV.02 · 포트폴리오',t:'인벤토리 검사',m:'C · for 문 + 배열 · 콘솔 미니게임'}};
+  const POST={if01:{k:'BONUS · LV.01 · 포트폴리오',t:'갈림길 게임',m:'C++ · if / else · 콘솔 미니게임'},for01:{k:'BONUS · LV.02 · 포트폴리오',t:'인벤토리 검사',m:'C · for 문 + 배열 · 콘솔 미니게임'},ammo01:{k:'BONUS · LV.09 · 포트폴리오',t:'총알 재장전',m:'Unreal Blueprint · 변수 + 연산자 · 캐릭터 BP'}};
   function read(id){
     const p=POST[id];md.classList.add('reading');q('mk2').textContent=p.k;q('mt').textContent=p.t;q('mm').textContent=p.m;
     q('mbd').innerHTML=q('rd-'+id).innerHTML;q('ov').scrollTop=0;if(q('ov').classList.contains('abs')){const pg=q('pg');md.style.top=Math.max(10,Math.min(parseInt(md.style.top)||20,pg.scrollHeight-md.offsetHeight-20))+'px'}
@@ -484,18 +485,18 @@ cin &gt;&gt; choice;
   new MutationObserver(()=>{if(!q('ov').classList.contains('show'))md.classList.remove('reading')}).observe(q('ov'),{attributes:true});
   window.__read=read;
 })();</script>
-<template id="lib-tpl"><div class="rtop2"><span class="bk" data-back>← 선반으로</span><span class="crumb">BONUS / 미니게임 / <b>전체 목록</b></span><span class="tm">예시 목록 · 앞으로 만들 게임 포함</span></div><div class="l5"><div class="bar"><label class="srch">⌕ <input id="lq5" placeholder="게임 이름이나 문법으로 찾기 (예: 배열, UMG)"></label><div class="chips"><span class="chip on" data-f5="all">전체 12</span><span class="chip" data-f5="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>C++ 기초 8</span><span class="chip" data-f5="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>언리얼 4</span></div></div><div class="wrap5"><div class="lst"><div class="cnt" id="lc5">12개 중 12개</div><div class="grp" data-g="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>CHAPTER 1 · C++ 기초</div><div class="rw5 clear on" data-i="0" data-cat="cpp" data-q="갈림길 게임 if / else 01 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.01</b><span class="t">갈림길 게임</span><span class="g">if / else</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="1" data-cat="cpp" data-q="인벤토리 검사 for 문 반복문 배열 02 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.02</b><span class="t">인벤토리 검사</span><span class="g">for 문</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 next" data-i="2" data-cat="cpp" data-q="가방 정리 배열 03 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.03</b><span class="t">가방 정리</span><span class="g">배열</span><span class="cg5">C++ 기초</span><em class="stt">▶ NEXT UP</em></div><div class="rw5 lock" data-i="3" data-cat="cpp" data-q="가위바위보 함수 04 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.04</b><span class="t">가위바위보</span><span class="g">함수</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="4" data-cat="cpp" data-q="몬스터 도감 구조체 05 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.05</b><span class="t">몬스터 도감</span><span class="g">구조체</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="5" data-cat="cpp" data-q="보물 지도 포인터 06 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.06</b><span class="t">보물 지도</span><span class="g">포인터</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="6" data-cat="cpp" data-q="턴제 전투 클래스 07 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.07</b><span class="t">턴제 전투</span><span class="g">클래스</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="7" data-cat="cpp" data-q="직업 선택 상속 08 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.08</b><span class="t">직업 선택</span><span class="g">상속</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="grp" data-g="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>CHAPTER 2 · 언리얼</div><div class="rw5 lock" data-i="8" data-cat="ue" data-q="문 열기 퍼즐 Blueprint 09 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.09</b><span class="t">문 열기 퍼즐</span><span class="g">Blueprint</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="9" data-cat="ue" data-q="코인 모으기 타이머 10 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.10</b><span class="t">코인 모으기</span><span class="g">타이머</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="10" data-cat="ue" data-q="체력바 만들기 UMG 11 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.11</b><span class="t">체력바 만들기</span><span class="g">UMG</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="11" data-cat="ue" data-q="스킬 쿨다운 GAS 12 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.12</b><span class="t">스킬 쿨다운</span><span class="g">GAS</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="empty" id="em5">찾는 게임이 없어요 ☁</div></div><div class="pv"><div class="cart5 next" id="c5" style="--a:#ffc8dd;--b:#dccbf7"><div class="lab"><small id="c5n">LV.01</small><b id="c5t">갈림길 게임</b><span id="c5g">if / else</span></div><em class="stt" id="c5s">✓ CLEAR</em><span class="cc" id="c5c">C++ 기초</span></div><dl><dt>한 줄</dt><dd id="c5d">숫자로 길을 고르는 모험</dd><dt>상태</dt><dd id="c5st">글을 읽을 수 있어요</dd></dl><span class="btn p" id="c5b" data-post="if01">포트폴리오 읽기 →</span><div class="keys" id="k5">마우스를 올려 구경하고, <b>클릭하면 고정</b>돼요</div></div></div></div></template><script>
+<template id="lib-tpl"><div class="rtop2"><span class="bk" data-back>← 선반으로</span><span class="crumb">BONUS / 미니게임 / <b>전체 목록</b></span><span class="tm">예시 목록 · 앞으로 만들 게임 포함</span></div><div class="l5"><div class="bar"><label class="srch">⌕ <input id="lq5" placeholder="게임 이름이나 문법으로 찾기 (예: 배열, UMG)"></label><div class="chips"><span class="chip on" data-f5="all">전체 13</span><span class="chip" data-f5="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>C++ 기초 8</span><span class="chip" data-f5="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>언리얼 5</span></div></div><div class="wrap5"><div class="lst"><div class="cnt" id="lc5">13개 중 13개</div><div class="grp" data-g="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>CHAPTER 1 · C++ 기초</div><div class="rw5 clear on" data-i="0" data-cat="cpp" data-q="갈림길 게임 if / else 01 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.01</b><span class="t">갈림길 게임</span><span class="g">if / else</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="1" data-cat="cpp" data-q="인벤토리 검사 for 문 반복문 배열 02 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.02</b><span class="t">인벤토리 검사</span><span class="g">for 문</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 next" data-i="2" data-cat="cpp" data-q="가방 정리 배열 03 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.03</b><span class="t">가방 정리</span><span class="g">배열</span><span class="cg5">C++ 기초</span><em class="stt">▶ NEXT UP</em></div><div class="rw5 lock" data-i="3" data-cat="cpp" data-q="가위바위보 함수 04 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.04</b><span class="t">가위바위보</span><span class="g">함수</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="4" data-cat="cpp" data-q="몬스터 도감 구조체 05 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.05</b><span class="t">몬스터 도감</span><span class="g">구조체</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="5" data-cat="cpp" data-q="보물 지도 포인터 06 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.06</b><span class="t">보물 지도</span><span class="g">포인터</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="6" data-cat="cpp" data-q="턴제 전투 클래스 07 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.07</b><span class="t">턴제 전투</span><span class="g">클래스</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="7" data-cat="cpp" data-q="직업 선택 상속 08 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.08</b><span class="t">직업 선택</span><span class="g">상속</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="grp" data-g="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>CHAPTER 2 · 언리얼</div><div class="rw5 clear" data-i="8" data-cat="ue" data-q="총알 재장전 변수 연산자 Blueprint 블루프린트 09 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.09</b><span class="t">총알 재장전</span><span class="g">변수 + 연산자</span><span class="cg5">언리얼</span><em class="stt">✓ CLEAR</em></div><div class="rw5 lock" data-i="9" data-cat="ue" data-q="문 열기 퍼즐 Blueprint 10 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.10</b><span class="t">문 열기 퍼즐</span><span class="g">Blueprint</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="10" data-cat="ue" data-q="코인 모으기 타이머 11 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.11</b><span class="t">코인 모으기</span><span class="g">타이머</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="11" data-cat="ue" data-q="체력바 만들기 UMG 12 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.12</b><span class="t">체력바 만들기</span><span class="g">UMG</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="12" data-cat="ue" data-q="스킬 쿨다운 GAS 13 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.13</b><span class="t">스킬 쿨다운</span><span class="g">GAS</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="empty" id="em5">찾는 게임이 없어요 ☁</div></div><div class="pv"><div class="cart5 next" id="c5" style="--a:#ffc8dd;--b:#dccbf7"><div class="lab"><small id="c5n">LV.01</small><b id="c5t">갈림길 게임</b><span id="c5g">if / else</span></div><em class="stt" id="c5s">✓ CLEAR</em><span class="cc" id="c5c">C++ 기초</span></div><dl><dt>한 줄</dt><dd id="c5d">숫자로 길을 고르는 모험</dd><dt>상태</dt><dd id="c5st">글을 읽을 수 있어요</dd></dl><span class="btn p" id="c5b" data-post="if01">포트폴리오 읽기 →</span><div class="keys" id="k5">마우스를 올려 구경하고, <b>클릭하면 고정</b>돼요</div></div></div></div></template><script>
 (function(){
   const q=id=>document.getElementById(id),md=q('md');
   document.addEventListener('click',e=>{
     if(e.target.closest('[data-lib]')){md.classList.add('reading','lib');q('mk2').textContent='BONUS · LIBRARY';q('mt').textContent='미니게임 전체 목록';
-      q('mm').textContent='12개 · 문법 하나 = 게임 하나';q('mbd').innerHTML=q('lib-tpl').innerHTML;PIN=null;q('ov').scrollTop=0;
+      q('mm').textContent='13개 · 문법 하나 = 게임 하나';q('mbd').innerHTML=q('lib-tpl').innerHTML;PIN=null;q('ov').scrollTop=0;
       if(q('ov').classList.contains('abs')){const pg=q('pg');md.style.top=Math.max(10,Math.min(parseInt(md.style.top)||20,pg.scrollHeight-md.offsetHeight-20))+'px'}
       return}
     if(e.target.closest('[data-post]')||e.target.closest('[data-back]'))md.classList.remove('lib');
   });
   
-  const D5=[{"n": "01", "t": "갈림길 게임", "g": "if / else", "c": "cpp", "cn": "C++ 기초", "d": "숫자로 길을 고르는 모험", "s": "clear", "p": "if01"}, {"n": "02", "t": "인벤토리 검사", "g": "for 문", "c": "cpp", "cn": "C++ 기초", "d": "빈 칸을 하나씩 찾아내기", "s": "clear", "p": "for01"}, {"n": "03", "t": "가방 정리", "g": "배열", "c": "cpp", "cn": "C++ 기초", "d": "아이템 5칸 인벤토리", "s": "next"}, {"n": "04", "t": "가위바위보", "g": "함수", "c": "cpp", "cn": "C++ 기초", "d": "판정 함수로 승부 내기", "s": "lock"}, {"n": "05", "t": "몬스터 도감", "g": "구조체", "c": "cpp", "cn": "C++ 기초", "d": "몬스터 정보 한 묶음", "s": "lock"}, {"n": "06", "t": "보물 지도", "g": "포인터", "c": "cpp", "cn": "C++ 기초", "d": "주소를 따라가는 지도", "s": "lock"}, {"n": "07", "t": "턴제 전투", "g": "클래스", "c": "cpp", "cn": "C++ 기초", "d": "용사 vs 슬라임", "s": "lock"}, {"n": "08", "t": "직업 선택", "g": "상속", "c": "cpp", "cn": "C++ 기초", "d": "전사 · 마법사 · 궁수", "s": "lock"}, {"n": "09", "t": "문 열기 퍼즐", "g": "Blueprint", "c": "ue", "cn": "언리얼", "d": "스위치를 밟으면 열리는 문", "s": "lock"}, {"n": "10", "t": "코인 모으기", "g": "타이머", "c": "ue", "cn": "언리얼", "d": "제한 시간 안에 다 모으기", "s": "lock"}, {"n": "11", "t": "체력바 만들기", "g": "UMG", "c": "ue", "cn": "언리얼", "d": "맞으면 줄어드는 하트", "s": "lock"}, {"n": "12", "t": "스킬 쿨다운", "g": "GAS", "c": "ue", "cn": "언리얼", "d": "쓰면 기다려야 하는 스킬", "s": "lock"}],C5={"cpp": ["#ffc8dd", "#dccbf7"], "ue": ["#bfe3ff", "#c6efda"]};
+  const D5=[{"n": "01", "t": "갈림길 게임", "g": "if / else", "c": "cpp", "cn": "C++ 기초", "d": "숫자로 길을 고르는 모험", "s": "clear", "p": "if01"}, {"n": "02", "t": "인벤토리 검사", "g": "for 문", "c": "cpp", "cn": "C++ 기초", "d": "빈 칸을 하나씩 찾아내기", "s": "clear", "p": "for01"}, {"n": "03", "t": "가방 정리", "g": "배열", "c": "cpp", "cn": "C++ 기초", "d": "아이템 5칸 인벤토리", "s": "next"}, {"n": "04", "t": "가위바위보", "g": "함수", "c": "cpp", "cn": "C++ 기초", "d": "판정 함수로 승부 내기", "s": "lock"}, {"n": "05", "t": "몬스터 도감", "g": "구조체", "c": "cpp", "cn": "C++ 기초", "d": "몬스터 정보 한 묶음", "s": "lock"}, {"n": "06", "t": "보물 지도", "g": "포인터", "c": "cpp", "cn": "C++ 기초", "d": "주소를 따라가는 지도", "s": "lock"}, {"n": "07", "t": "턴제 전투", "g": "클래스", "c": "cpp", "cn": "C++ 기초", "d": "용사 vs 슬라임", "s": "lock"}, {"n": "08", "t": "직업 선택", "g": "상속", "c": "cpp", "cn": "C++ 기초", "d": "전사 · 마법사 · 궁수", "s": "lock"}, {"n": "09", "t": "총알 재장전", "g": "변수 + 연산자", "c": "ue", "cn": "언리얼", "d": "쏘면 줄고, R키로 꽉 채우기", "s": "clear", "p": "ammo01"}, {"n": "10", "t": "문 열기 퍼즐", "g": "Blueprint", "c": "ue", "cn": "언리얼", "d": "스위치를 밟으면 열리는 문", "s": "lock"}, {"n": "11", "t": "코인 모으기", "g": "타이머", "c": "ue", "cn": "언리얼", "d": "제한 시간 안에 다 모으기", "s": "lock"}, {"n": "12", "t": "체력바 만들기", "g": "UMG", "c": "ue", "cn": "언리얼", "d": "맞으면 줄어드는 하트", "s": "lock"}, {"n": "13", "t": "스킬 쿨다운", "g": "GAS", "c": "ue", "cn": "언리얼", "d": "쓰면 기다려야 하는 스킬", "s": "lock"}],C5={"cpp": ["#ffc8dd", "#dccbf7"], "ue": ["#bfe3ff", "#c6efda"]};
   let PIN=null;window.__pin=()=>PIN;
   function pinMark(){document.querySelectorAll('.l5 .rw5').forEach(r=>r.classList.toggle('pin',PIN!==null&&r.dataset.i==PIN));const c=document.getElementById('c5');if(c)c.classList.toggle('pinned',PIN!==null);const k=document.getElementById('k5');if(k)k.innerHTML=PIN!==null?'📌 <b>LV.'+D5[PIN].n+'</b> 고정됨 · 다시 누르면 풀려요':'마우스를 올려 구경하고, <b>클릭하면 고정</b>돼요'}
   function p5(i){const d=D5[i];document.querySelectorAll('.l5 .rw5').forEach(r=>r.classList.toggle('on',r.dataset.i==i));
@@ -506,7 +507,7 @@ cin &gt;&gt; choice;
   function f5(){const q=((document.getElementById('lq5')||{}).value||'').trim(),on=document.querySelector('.l5 .chip.on'),f=on?on.dataset.f5:'all';let n=0;
     document.querySelectorAll('.l5 .rw5').forEach(r=>{const ok=(f==='all'||r.dataset.cat===f)&&r.dataset.q.includes(q);r.classList.toggle('hide',!ok);if(ok)n++});
     document.querySelectorAll('.l5 .grp').forEach(g=>g.classList.toggle('hide',!document.querySelector('.l5 .rw5[data-cat="'+g.dataset.g+'"]:not(.hide)')));
-    const e=document.getElementById('em5');if(e)e.style.display=n?'none':'block';const c=document.getElementById('lc5');if(c)c.textContent='12개 중 '+n+'개';
+    const e=document.getElementById('em5');if(e)e.style.display=n?'none':'block';const c=document.getElementById('lc5');if(c)c.textContent='13개 중 '+n+'개';
     if(PIN!==null&&document.querySelector('.l5 .rw5[data-i="'+PIN+'"].hide')){PIN=null;document.querySelectorAll('.l5 .rw5.on').forEach(r=>r.classList.remove('on'))}pinMark();const first=document.querySelector('.l5 .rw5:not(.hide)');if(first&&!document.querySelector('.l5 .rw5.on:not(.hide)'))p5(first.dataset.i);}
   document.addEventListener('mouseover',e=>{const r=e.target.closest('.l5 .rw5');if(r&&PIN===null)p5(r.dataset.i)});
   document.addEventListener('click',e=>{const r=e.target.closest('.l5 .rw5');if(r){const i=+r.dataset.i;PIN=(PIN===i)?null:i;p5(i);pinMark()}const c=e.target.closest('.l5 .chip');if(c){document.querySelectorAll('.l5 .chip').forEach(x=>x.classList.toggle('on',x===c));f5()}});
@@ -644,6 +645,479 @@ body.lock{overflow:hidden}
   }
   const mbd=document.getElementById('mbd');
   new MutationObserver(()=>{const r=mbd.querySelector('[data-anim="for01"]');if(r)start(r);else stop()}).observe(mbd,{childList:true});
+})();
+</script>
+<template id="rd-ammo01"><div class="rtop2"><span class="bk" data-back>← 미니게임</span><span class="crumb">BONUS / 미니게임 / <b>LV.09 총알 재장전</b></span><span class="tm">읽는 데 6분</span></div>
+<div class="r1"><aside><h5>Contents</h5><div class="sm">9 CHAPTERS</div><ol class="toc">
+<li data-to="a1"><small>CHAPTER 1</small>한눈에 보기</li>
+<li data-to="a2"><small>CHAPTER 2</small>오늘 배운 것</li>
+<li data-to="a3"><small>CHAPTER 3</small>로직 설계 과정</li>
+<li data-to="a4"><small>CHAPTER 4</small>구조 · 아키텍처</li>
+<li data-to="a5"><small>CHAPTER 5</small>흐름 따라가기</li>
+<li data-to="a6"><small>CHAPTER 6</small>블루프린트 만들기</li>
+<li data-to="a7"><small>CHAPTER 7</small>실수 · 해결</li>
+<li data-to="a8"><small>CHAPTER 8</small>플레이 · 테스트</li>
+<li data-to="a9"><small>CHAPTER 9</small>회고 · 다음 레벨</li>
+</ol><div class="prog"><i></i></div></aside>
+<div class="rsc" data-anim="ammo01">
+
+<section class="rsx" id="a1"><div class="rh"><span class="rn">01</span><span class="rk">OVERVIEW</span><h3>한눈에 보기</h3></div>
+<p class="lead">마우스를 누르면 <b>한 발씩</b> 쏘고, 총알이 없으면 <b>안 쏴지고</b>, R키를 누르면 <b>다시 꽉 채우는</b> — FPS의 기본 중의 기본, <b>총알 재장전 시스템</b>을 블루프린트로 만들었어요.</p>
+<div class="facts"><div><small>엔진</small>Unreal 5</div><div><small>도구</small>Blueprint</div><div><small>배운 것</small>변수 + 연산자</div><div><small>작업 위치</small>캐릭터 BP</div></div>
+<div class="am-hero am-rv">
+<div class="am-hud" data-hud="hero"><div class="am-hudt"><span>AMMO</span><b class="am-num">10</b><em>/ 10</em></div><div class="am-pips"></div><div class="am-act">READY</div></div>
+<div class="am-heroc"><small>이 글에서 만든 것</small><ul><li>🖱️ <b>좌클릭</b> → 총알이 있으면 1발 발사</li><li>⛔ 총알이 <b>0</b>이면 → 안 쏴짐</li><li>⌨️ <b>R키</b> → 덜 찼을 때만 꽉 채우기</li></ul></div>
+</div>
+<div class="fx-pipe"><span style="--d:0s">📦 변수 준비</span><i></i><span style="--d:.6s">🖱️ 클릭</span><i></i><span style="--d:1.2s">❓ 총알 있음?</span><i></i><span style="--d:1.8s">➖ 1발 빼기</span><i></i><span style="--d:2.4s">⌨️ R 재장전</span></div>
+</section>
+
+<section class="rsx" id="a2"><div class="rh"><span class="rn">02</span><span class="rk">LEARNED</span><h3>오늘 배운 것</h3></div>
+<p><b>변수</b> = 값을 넣어 두는 <b>이름표 붙은 상자</b>예요. 총알 시스템에는 상자가 <b>2개</b> 필요했어요.</p>
+<div class="am-vars am-rv">
+<div class="am-var v1"><small>Integer · 정수 · 시작할 때 채워짐</small><b>🔢 CurrentAmmo</b><span>지금 탄창에 남은 총알</span><div class="am-box"><i class="am-fill" data-sync="fill"></i><em data-sync="num">10</em></div></div>
+<div class="am-var v2"><small>Integer · 정수 · 기본값 10</small><b>🏆 MaxAmmo</b><span>탄창에 들어가는 최대 개수</span><div class="am-box"><i class="am-fill" style="width:100%"></i><em>10</em></div></div>
+</div>
+<div class="call">🍪 비유하면 — <b>MaxAmmo</b>는 과자 통의 크기(10칸), <b>CurrentAmmo</b>는 지금 통에 남은 과자예요. 먹으면(쏘면) 과자만 줄고, <b>통 크기는 그대로</b>!</div>
+<h4 class="am-sub">쓴 연산자 4개</h4>
+<div class="am-ops am-rv"><div style="--d:0s"><code>−</code><b>빼기</b><small>쏠 때마다 Current − 1</small></div><div style="--d:1s"><code>&gt;</code><b>크다</b><small>Current &gt; 0 → 총알 있나?</small></div><div style="--d:2s"><code>==</code><b>같다</b><small>Current == Max → 꽉 찼나?</small></div><div style="--d:3s"><code>SET</code><b>넣기</b><small>Current = Max → 채우기</small></div></div>
+<h4 class="am-sub">선은 2종류</h4>
+<div class="am-wires am-rv"><svg viewBox="0 0 600 170" aria-label="실행 선과 데이터 선">
+<defs><filter id="amGlow"><feGaussianBlur stdDeviation="2.4"/></filter></defs>
+<g font-family="IBM Plex Mono" font-size="12">
+<rect x="20" y="18" width="150" height="62" rx="10" fill="#241e36" stroke="#6b5f8f"/><rect x="20" y="18" width="150" height="22" rx="10" fill="#e07aa3"/><rect x="20" y="30" width="150" height="10" fill="#e07aa3"/><text x="32" y="34" fill="#fff">◆ Event BeginPlay</text>
+<rect x="400" y="18" width="180" height="100" rx="10" fill="#241e36" stroke="#6b5f8f"/><rect x="400" y="18" width="180" height="22" rx="10" fill="#4fb893"/><rect x="400" y="30" width="180" height="10" fill="#4fb893"/><text x="476" y="34" fill="#fff">SET</text>
+<text x="428" y="100" fill="#e8defc">Current Ammo</text>
+<rect x="30" y="110" width="140" height="32" rx="16" fill="#241e36" stroke="#6b5f8f"/><text x="52" y="131" fill="#e8defc">Max Ammo</text>
+<path d="M156 60 l8 0 l0 0" stroke="#fff"/><polygon points="152,54 162,60 152,66" fill="#fff"/><polygon points="408,54 418,60 408,66" fill="#fff"/>
+<circle cx="160" cy="126" r="5" fill="#4cd9a0"/><circle cx="414" cy="96" r="5" fill="#4cd9a0"/>
+<path id="amExec" d="M162 60 C 280 60 290 60 408 60" fill="none" stroke="#fff" stroke-width="3"/>
+<path id="amData" d="M165 126 C 300 126 290 96 409 96" fill="none" stroke="#4cd9a0" stroke-width="2.6"/>
+<circle r="7" fill="#fff" filter="url(#amGlow)"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#amExec"/></animateMotion></circle>
+<g><rect x="-13" y="-10" width="26" height="20" rx="10" fill="#4cd9a0" stroke="#241e36"/><text y="4" text-anchor="middle" font-size="11" fill="#241e36">10</text><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#amData"/></animateMotion></g>
+<text x="230" y="48" fill="#5b4a7a" font-size="11">⚪ 실행 선 = “이거 해!”</text>
+<text x="220" y="150" fill="#2f9e75" font-size="11">🟢 데이터 선 = “이 값 써!”</text>
+</g></svg></div>
+<div class="call">🍳 비유하면 — ⚪ 하얀 선은 <b>“이제 요리 시작해!”</b> 신호, 🟢 초록 선은 <b>재료(숫자)</b>예요. 재료만 있고 신호가 없으면 요리사는 가만히 있어요. (→ 7장 버그 3번이 바로 이거!)</div>
+</section>
+
+<section class="rsx" id="a3"><div class="rh"><span class="rn">03</span><span class="rk">DESIGN</span><h3>로직 설계 과정</h3></div>
+<p>바로 노드부터 잇지 않고, <b>손으로 로직 그림</b>부터 그렸어요. 그림을 <b>3번</b> 고쳤고, 그 사이에 버그 2개를 미리 잡았어요. <span class="mu">(이미지를 누르면 크게 보여요)</span></p>
+<div class="am-tl">
+<div class="am-ver am-rv"><div class="am-vh"><span class="am-tag">v1</span><b>발사 로직 첫 그림</b><em class="am-stamp bug">BUG 1</em></div>
+<figure class="am-shot" data-zoom><img src="img/ammo01/flow_v1.png" alt="발사 로직 첫 손그림" loading="lazy"></figure>
+<div class="am-note"><b>🤔 발견</b> 탕탕 → −1 → “총알 있음?”으로 <b>자동으로</b> 돌아가요. 그러면 클릭 <b>1번</b>에 10발이 한꺼번에 나가요 💥💥💥<span class="am-fix">✅ 되돌아가는 화살표를 <b>“다음 클릭 기다리기”</b>로 → 클릭 1번 = 검사 1번</span></div></div>
+<div class="am-ver am-rv"><div class="am-vh"><span class="am-tag">v2</span><b>재장전까지 넣은 그림</b><em class="am-stamp bug">BUG 2 · 3</em></div>
+<figure class="am-shot" data-zoom><img src="img/ammo01/flow_v2.png" alt="재장전을 넣은 두 번째 손그림" loading="lazy"></figure>
+<div class="am-note"><b>🤔 발견 ①</b> 재장전 yes 다음에 <b>총알을 채우는 칸</b>이 없어요. 총알은 계속 0 → “총알 있음? → no → 재장전? → yes → …” <b>무한 루프</b> 🌀<br><b>🤔 발견 ②</b> “다시 검사”가 또 자동으로 돌아가요 (v1과 같은 문제).<span class="am-fix">✅ <code>CurrentAmmo = MaxAmmo</code> 칸 추가 · ✅ 발사와 재장전을 <b>두 줄로 분리</b></span></div></div>
+<div class="am-ver final am-rv"><div class="am-vh"><span class="am-tag">v3</span><b>최종 · 두 줄로 분리</b><em class="am-stamp ok">CLEAR</em></div>
+<div class="am-q">💭 “발사와 재장전, <b>한 줄</b>일까 <b>두 줄</b>일까?” → <b>두 줄!</b> 재장전은 총알이 3개 남아도 R키로 할 수 있어야 하니까요. 그리고 <b>꽉 차 있으면</b> 재장전하지 않기로 정했어요.</div>
+<div class="am-flows">
+<figure><figcaption>🔫 발사 줄</figcaption><svg viewBox="0 0 320 300" aria-label="발사 로직">
+<defs><marker id="amA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b4a7a"/></marker></defs>
+<path d="M70 268 H24 V30 H66" fill="none" stroke="#b0739a" stroke-width="2" stroke-dasharray="6 6" class="fx-flow" marker-end="url(#amA)"/>
+<g fill="none" stroke="#5b4a7a" stroke-width="2"><path d="M130 48 V68" marker-end="url(#amA)"/><path d="M200 110 H224" marker-end="url(#amA)"/><path d="M130 148 V170" marker-end="url(#amA)"/><path d="M130 220 V246" marker-end="url(#amA)"/></g>
+<g stroke="#5b4a7a" stroke-width="1.5" font-family="Gowun Dodum" text-anchor="middle" fill="#5b4a7a">
+<rect x="70" y="12" width="120" height="36" rx="18" fill="#bfe3ff"/><text x="130" y="35" stroke="none">🖱️ 좌클릭</text>
+<path d="M130 72 L200 110 L130 148 L60 110 Z" fill="#fff0b3"/><text x="130" y="107" stroke="none" font-size="13">총알 있음?</text><text x="130" y="124" stroke="none" font-size="10" font-family="IBM Plex Mono">Current &gt; 0</text>
+<rect x="228" y="90" width="84" height="40" rx="10" fill="#ffc8dd"/><text x="270" y="115" stroke="none" font-size="12">⛔ 멈춤</text>
+<rect x="70" y="174" width="120" height="46" rx="10" fill="#c6efda"/><text x="130" y="194" stroke="none">💥 발사</text><text x="130" y="211" stroke="none" font-size="10" font-family="IBM Plex Mono">Current − 1</text>
+<rect x="70" y="250" width="120" height="36" rx="18" fill="#dccbf7"/><text x="130" y="273" stroke="none" font-size="12.5">⏸️ 다음 클릭 대기</text>
+<text x="212" y="102" stroke="none" font-size="10" fill="#e07aa3">no</text><text x="146" y="163" stroke="none" font-size="10" fill="#2f9e75">yes</text>
+</g>
+<circle r="6" fill="#e07aa3" stroke="#fff" stroke-width="2"><animateMotion dur="4.2s" repeatCount="indefinite" path="M130 30 V268 H24 V30 H130"/></circle>
+</svg></figure>
+<figure><figcaption>🔄 재장전 줄</figcaption><svg viewBox="0 0 320 300" aria-label="재장전 로직">
+<g fill="none" stroke="#5b4a7a" stroke-width="2"><path d="M130 48 V68" marker-end="url(#amA)"/><path d="M200 110 H224" marker-end="url(#amA)"/><path d="M130 148 V170" marker-end="url(#amA)"/><path d="M130 220 V246" marker-end="url(#amA)"/></g>
+<g stroke="#5b4a7a" stroke-width="1.5" font-family="Gowun Dodum" text-anchor="middle" fill="#5b4a7a">
+<rect x="70" y="12" width="120" height="36" rx="18" fill="#bfe3ff"/><text x="130" y="35" stroke="none">⌨️ R키</text>
+<path d="M130 72 L200 110 L130 148 L60 110 Z" fill="#fff0b3"/><text x="130" y="107" stroke="none" font-size="13">꽉 찼음?</text><text x="130" y="124" stroke="none" font-size="9.5" font-family="IBM Plex Mono">Current == Max</text>
+<rect x="228" y="84" width="84" height="52" rx="10" fill="#ffc8dd"/><text x="270" y="106" stroke="none" font-size="11.5">🖨️ 이미</text><text x="270" y="123" stroke="none" font-size="11.5">가득참!</text>
+<rect x="70" y="174" width="120" height="46" rx="10" fill="#c6efda"/><text x="130" y="194" stroke="none">🔄 채우기</text><text x="130" y="211" stroke="none" font-size="10" font-family="IBM Plex Mono">Current = Max</text>
+<rect x="70" y="250" width="120" height="36" rx="18" fill="#dccbf7"/><text x="130" y="273" stroke="none" font-size="12.5">🖨️ 장전 완료</text>
+<text x="212" y="102" stroke="none" font-size="10" fill="#e07aa3">True</text><text x="150" y="163" stroke="none" font-size="10" fill="#2f9e75">False</text>
+</g>
+<circle r="6" fill="#e07aa3" stroke="#fff" stroke-width="2"><animateMotion dur="3s" repeatCount="indefinite" path="M130 30 V268"/></circle>
+</svg></figure>
+</div></div>
+</div>
+</section>
+
+<section class="rsx" id="a4"><div class="rh"><span class="rn">04</span><span class="rk">ARCHITECTURE</span><h3>구조 · 아키텍처</h3></div>
+<p>캐릭터 블루프린트 하나 안에 <b>변수 2개</b>와 <b>이벤트 줄 3개</b>가 들어 있어요. 줄마다 시작 버튼(이벤트)이 따로 있어서 서로 방해하지 않아요.</p>
+<div class="fx-arch am-rv"><div class="fx-archh"><span>BP_Character · Event Graph</span><span>점이 흐르는 방향 = 실행 순서</span></div>
+<svg viewBox="0 0 640 300" aria-label="캐릭터 블루프린트 구조도">
+<defs><marker id="amB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b4a7a"/></marker></defs>
+<rect x="14" y="12" width="612" height="36" rx="18" fill="#fff0b3" stroke="#5b4a7a" stroke-width="1.5"/>
+<g font-family="Gowun Dodum" font-size="13" fill="#5b4a7a"><text x="30" y="35">📦 변수</text>
+<rect x="100" y="19" width="150" height="22" rx="11" fill="#fff" stroke="#5b4a7a"/><text x="175" y="35" text-anchor="middle" font-size="12">🔢 CurrentAmmo</text>
+<rect x="262" y="19" width="170" height="22" rx="11" fill="#fff" stroke="#5b4a7a"/><text x="347" y="35" text-anchor="middle" font-size="12">🏆 MaxAmmo = 10</text>
+<text x="612" y="35" text-anchor="end" font-family="IBM Plex Mono" font-size="10" fill="#7a6a96">Integer × 2</text></g>
+<g stroke="#d9cbe8" stroke-dasharray="4 6"><path d="M14 132 H626"/><path d="M14 212 H626"/></g>
+<g fill="none" stroke-width="4" stroke-linecap="round" stroke="#5b4a7a" stroke-dasharray="2 9">
+<path class="fx-flow" d="M118 92 H148" marker-end="url(#amB)"/><path class="fx-flow" d="M286 92 H316" marker-end="url(#amB)"/><path class="fx-flow" d="M454 92 H484" marker-end="url(#amB)"/>
+<path class="fx-flow" d="M118 172 H148" marker-end="url(#amB)"/><path class="fx-flow" d="M286 172 H316" marker-end="url(#amB)"/><path class="fx-flow" d="M454 172 H484" marker-end="url(#amB)"/>
+<path class="fx-flow" d="M118 252 H148" marker-end="url(#amB)"/><path class="fx-flow" d="M286 252 H316" marker-end="url(#amB)"/><path class="fx-flow" d="M454 252 H484" marker-end="url(#amB)"/>
+</g>
+<g font-family="IBM Plex Mono" font-size="9.5" fill="#b0739a"><text x="289" y="165" font-size="8.5">True</text><text x="288" y="245" font-size="8.5">False</text><text x="156" y="207">False → 멈춤</text><text x="156" y="288">True → 이미 가득참!</text></g>
+<g font-family="Gowun Dodum" fill="#5b4a7a" stroke="#5b4a7a" stroke-width="1.5" text-anchor="middle">
+<g class="fx-node" style="--d:0s"><rect x="14" y="70" width="104" height="44" rx="22" fill="#ffc8dd"/><text x="66" y="97" stroke="none" font-size="12.5">▶️ BeginPlay</text></g>
+<g class="fx-node" style="--d:.3s"><rect x="150" y="70" width="136" height="44" rx="10" fill="#c6efda"/><text x="218" y="89" stroke="none" font-size="12.5">🔄 SET</text><text x="218" y="105" stroke="none" font-size="9.5" font-family="IBM Plex Mono">Current = Max</text></g>
+<g class="fx-node" style="--d:.6s"><rect x="318" y="70" width="136" height="44" rx="10" fill="#fff"/><text x="386" y="89" stroke="none" font-size="12.5">📝 Format Text</text><text x="386" y="105" stroke="none" font-size="9.5" font-family="IBM Plex Mono">{Count} / {max}</text></g>
+<g class="fx-node" style="--d:.9s"><rect x="486" y="70" width="140" height="44" rx="10" fill="#dccbf7"/><text x="556" y="89" stroke="none" font-size="12.5">🖨️ Print</text><text x="556" y="105" stroke="none" font-size="9.5" font-family="IBM Plex Mono">10 / 10</text></g>
+<g class="fx-node" style="--d:1s"><rect x="14" y="150" width="104" height="44" rx="22" fill="#ffc8dd"/><text x="66" y="177" stroke="none" font-size="12.5">🖱️ 좌클릭</text></g>
+<g class="fx-node" style="--d:1.3s"><rect x="150" y="150" width="136" height="44" rx="10" fill="#fff0b3"/><text x="218" y="169" stroke="none" font-size="12.5">❓ Branch</text><text x="218" y="185" stroke="none" font-size="9.5" font-family="IBM Plex Mono">Current &gt; 0</text></g>
+<g class="fx-node" style="--d:1.6s"><rect x="318" y="150" width="136" height="44" rx="10" fill="#c6efda"/><text x="386" y="169" stroke="none" font-size="12.5">➖ SET</text><text x="386" y="185" stroke="none" font-size="9.5" font-family="IBM Plex Mono">Current − 1</text></g>
+<g class="fx-node" style="--d:1.9s"><rect x="486" y="150" width="140" height="44" rx="10" fill="#dccbf7"/><text x="556" y="169" stroke="none" font-size="12.5">🖨️ Print</text><text x="556" y="185" stroke="none" font-size="9.5" font-family="IBM Plex Mono">9 / 10</text></g>
+<g class="fx-node" style="--d:2s"><rect x="14" y="230" width="104" height="44" rx="22" fill="#ffc8dd"/><text x="66" y="257" stroke="none" font-size="12.5">⌨️ R키</text></g>
+<g class="fx-node" style="--d:2.3s"><rect x="150" y="230" width="136" height="44" rx="10" fill="#fff0b3"/><text x="218" y="249" stroke="none" font-size="12.5">❓ Branch</text><text x="218" y="265" stroke="none" font-size="9.5" font-family="IBM Plex Mono">Current == Max</text></g>
+<g class="fx-node" style="--d:2.6s"><rect x="318" y="230" width="136" height="44" rx="10" fill="#c6efda"/><text x="386" y="249" stroke="none" font-size="12.5">🔄 SET</text><text x="386" y="265" stroke="none" font-size="9.5" font-family="IBM Plex Mono">Current = Max</text></g>
+<g class="fx-node" style="--d:2.9s"><rect x="486" y="230" width="140" height="44" rx="10" fill="#dccbf7"/><text x="556" y="249" stroke="none" font-size="12.5">🖨️ Print</text><text x="556" y="265" stroke="none" font-size="9.5" font-family="IBM Plex Mono">장전 완료</text></g>
+</g></svg>
+<div class="fx-legend"><span><i class="l1"></i>실행 흐름 (하얀 선)</span><span>줄 1 시작 세팅 · 줄 2 발사 · 줄 3 재장전</span></div></div>
+<div class="call">🎒 <b>왜 캐릭터 BP에?</b> — 지금은 총이 1개라서 총알 = 캐릭터 가방 속 물건이에요. 캐릭터는 키 입력도 바로 받아서 테스트가 편해요. 나중에 총이 여러 개(권총 10 · 소총 30 · 샷건 6)가 되면 <b>총마다 BP_Weapon</b>으로 옮길 계획이에요.</div>
+</section>
+
+<section class="rsx" id="a5"><div class="rh"><span class="rn">05</span><span class="rk">TRACE</span><h3>흐름 따라가기</h3></div>
+<p>시작 → 3발 쏘기 → R → 한 번 더 R → 끝까지 쏘기 → 빈 탄창에서 클릭 → R … 순서대로 <b>자동 재생</b>돼요. 지금 실행 중인 노드가 반짝여요.</p>
+<div class="am-sim am-rv" id="amSim">
+<div class="am-simh"><span>BP_Character · 자동 재생</span><span id="amStep">준비</span></div>
+<div class="am-simb">
+<div class="am-lanes">
+<div class="am-lane"><div class="am-n ev" data-n="b0">▶️ BeginPlay</div><i class="am-ar">→</i><div class="am-n set" data-n="b1">🔄 Current = Max</div><i class="am-ar">→</i><div class="am-n pr" data-n="b2">🖨️ Print</div></div>
+<div class="am-lane"><div class="am-n ev" data-n="f0">🖱️ 좌클릭</div><i class="am-ar">→</i><div class="am-n q" data-n="f1">❓ Current &gt; 0</div><i class="am-ar">→</i><div class="am-n set" data-n="f2">➖ Current − 1</div><i class="am-ar">→</i><div class="am-n pr" data-n="f3">🖨️ Print</div></div>
+<div class="am-alt" data-n="fx">└ False → ⛔ 멈춤 (선이 없으니 아무 일도 안 해요)</div>
+<div class="am-lane"><div class="am-n ev" data-n="r0">⌨️ R키</div><i class="am-ar">→</i><div class="am-n q" data-n="r1">❓ Current == Max</div><i class="am-ar">→</i><div class="am-n set" data-n="r2">🔄 Current = Max</div><i class="am-ar">→</i><div class="am-n pr" data-n="r3">🖨️ 장전 완료</div></div>
+<div class="am-alt" data-n="r4">└ True → 🖨️ 이미 가득참! (장전 안 함)</div>
+</div>
+<div class="am-side"><div class="am-hud sm" data-hud="sim"><div class="am-hudt"><span>AMMO</span><b class="am-num">0</b><em>/ 10</em></div><div class="am-pips"></div><div class="am-act">—</div></div>
+<div class="am-log"><div class="am-logh">Print String</div><div class="am-logb" id="amLog"></div></div></div>
+</div>
+<div class="am-say" id="amSay">▶️ 곧 시작해요…</div>
+</div>
+<p class="cap">↑ 로그는 언리얼 Print String처럼 <b>새 글이 맨 위</b>에 쌓여요.</p>
+</section>
+
+<section class="rsx" id="a6"><div class="rh"><span class="rn">06</span><span class="rk">BUILD</span><h3>블루프린트 만들기</h3></div>
+<p>그림을 보면서 노드를 하나씩 연결했어요. 틀렸던 순간은 <b>BEFORE / AFTER</b>로 남겨 뒀어요. 버튼을 눌러 비교해 보세요.</p>
+
+<div class="am-step am-rv"><div class="am-sh"><span class="am-no">STEP 1</span><b>시작 세팅 — 10 / 10으로 시작하기</b></div>
+<p>기본값은 <code>MaxAmmo</code>에만 10을 줬어요. 게임이 시작되면 MaxAmmo를 <b>Get</b>해서 CurrentAmmo에 <b>Set</b>! 숫자 10을 직접 쓰지 않고 변수를 써서, 탄창 크기를 바꿀 때 <b>한 곳만</b> 고치면 돼요.</p>
+<div class="am-ba" data-ba><div class="am-bat"><button class="on" data-b="0">BEFORE · 실행 선 없음</button><button data-b="1">AFTER · 연결 + 출력</button></div>
+<div class="am-bav"><figure class="am-shot on" data-zoom><img src="img/ammo01/bp_begin_bug.png" alt="BeginPlay 실행 선이 연결되지 않은 블루프린트" loading="lazy"><figcaption>❌ BeginPlay ▷ 가 SET과 안 이어져서, 게임을 켜도 SET이 실행되지 않아요</figcaption></figure><figure class="am-shot" data-zoom><img src="img/ammo01/bp_begin_fix.png" alt="BeginPlay부터 Print String까지 연결된 블루프린트" loading="lazy"><figcaption>✅ BeginPlay → SET → Format Text → Print String</figcaption></figure></div></div>
+<div class="am-pair"><figure class="am-shot" data-zoom><img src="img/ammo01/play_start.png" alt="CurrentAmmo 10 출력 화면" loading="lazy"></figure><div class="call">🎉 실행하자 <b>CurrentAmmo: 10</b>이 떴어요!<br>알려주지 않은 <code>Format Text</code>의 <code>{Count}</code>를 스스로 써서 숫자를 문장 안에 쏙 넣었어요.</div></div>
+</div>
+
+<div class="am-step am-rv"><div class="am-sh"><span class="am-no">STEP 2</span><b>발사 줄 — 좌클릭하면 1발씩</b></div>
+<p><code>좌클릭</code> → <code>Branch (Current &gt; 0)</code> → True면 <code>SET (Current − 1)</code> → <code>Format Text</code> → <code>Print</code>. False는 <b>일부러 비워 뒀어요</b> — 하얀 선이 없으면 거기서 멈추니까요.</p>
+<div class="am-ba" data-ba><div class="am-bat"><button class="on" data-b="0">BEFORE · Branch 없음</button><button data-b="1">AFTER · Branch 추가</button></div>
+<div class="am-bav"><figure class="am-shot on" data-zoom><img src="img/ammo01/bp_fire_bug.png" alt="Branch 없이 바로 빼는 발사 블루프린트" loading="lazy"><figcaption>❌ 클릭하면 무조건 −1 → 0 다음에 −1, −2… 문지기가 없는 문이에요</figcaption></figure><figure class="am-shot" data-zoom><img src="img/ammo01/bp_fire_fix.png" alt="Branch로 총알을 검사하는 발사 블루프린트" loading="lazy"><figcaption>✅ Branch(Current &gt; 0)가 문지기 — 총알이 있을 때만 통과</figcaption></figure></div></div>
+<div class="am-seqs"><div class="am-seq bad"><small>BEFORE · 12번 클릭</small><span style="--d:0s">2</span><span style="--d:.5s">1</span><span style="--d:1s">0</span><span class="x" style="--d:1.5s">−1 😱</span><span class="x" style="--d:2s">−2</span></div><div class="am-seq good"><small>AFTER · 12번 클릭</small><span style="--d:0s">2</span><span style="--d:.5s">1</span><span style="--d:1s">0</span><span class="o" style="--d:1.5s">0 🛡️</span><span class="o" style="--d:2s">0</span></div></div>
+</div>
+
+<div class="am-step am-rv"><div class="am-sh"><span class="am-no">STEP 3</span><b>재장전 줄 — 덜 찼을 때만 채우기</b></div>
+<figure class="am-shot" data-zoom><img src="img/ammo01/bp_reload.png" alt="R키 재장전 블루프린트" loading="lazy"><figcaption>R → Branch(Current == Max) → False → SET(Current = Max) → “장전 완료” 출력</figcaption></figure>
+<p>그림에서는 “<b>덜 찼어?</b>(<code>&lt;</code>)”라고 물었는데, 블루프린트에서는 “<b>꽉 찼어?</b>(<code>==</code>)”라고 거꾸로 물었어요. 질문을 반대로 했으니 장전도 <b>반대쪽(False)</b>에 붙였죠.</p>
+<div class="am-cmp"><div><small>📋 그림</small><code>Current &lt; Max</code> ?<b>True</b>에서 장전</div><i>=</i><div><small>🧱 내 BP</small><code>Current == Max</code> ?<b>False</b>에서 장전</div></div>
+<div class="call">🍚 “배고파?” → 응 → 밥 / “배불러?” → 아니 → 밥. 질문은 달라도 <b>결과는 같아요</b>. True 쪽엔 보너스로 <b>“이미 가득참!”</b> 출력도 붙였어요.</div>
+</div>
+</section>
+
+<section class="rsx" id="a7"><div class="rh"><span class="rn">07</span><span class="rk">DEBUG</span><h3>실수 · 해결</h3></div>
+<div class="am-score am-rv"><div><small>발견한 버그</small><b data-count="4">0</b></div><i>→</i><div class="ok"><small>해결한 버그</small><b data-count="4">0</b></div><p>그림 단계에서 2개, 블루프린트 단계에서 2개를 잡았어요.</p></div>
+<div class="am-bug am-rv"><span class="am-bt">BUG 1 · 설계</span><div class="tsx"><div><small>문제</small>클릭 <b>1번</b>에 10발이 한꺼번에 나감</div><div><small>왜?</small>되돌아가는 화살표가 <b>자동으로</b> 다시 검사로 감</div><div class="ok"><small>해결</small>“다음 클릭 대기” → 클릭 1번 = 검사 1번</div></div></div>
+<div class="am-bug am-rv"><span class="am-bt">BUG 2 · 설계</span><div class="tsx"><div><small>문제</small>재장전해도 총알 0 그대로, <b>무한 루프</b></div><div><small>왜?</small>재장전 yes 다음에 <b>채우는 칸</b>이 없음</div><div class="ok"><small>해결</small><code>Current = Max</code> 추가 + 발사·재장전 <b>두 줄로 분리</b></div></div></div>
+<div class="am-bug am-rv"><span class="am-bt">BUG 3 · 블루프린트</span><div class="tsx"><div><small>문제</small>게임을 켜도 CurrentAmmo가 안 채워짐</div><div><small>왜?</small>🟢 데이터 선만 있고 ⚪ <b>실행 선</b>이 없음</div><div class="ok"><small>해결</small>BeginPlay ▷ → SET ▷ 연결 → Print로 10 확인</div></div></div>
+<div class="am-bug am-rv"><span class="am-bt">BUG 4 · 블루프린트</span><div class="tsx"><div><small>문제</small>총알이 <b>−1, −2…</b> 음수가 됨</div><div><small>왜?</small>문지기(<b>Branch</b>)가 없어서 누구나 통과</div><div class="ok"><small>해결</small><code>Branch (Current &gt; 0)</code> → 0에서 멈춤</div></div></div>
+<div class="call">💡 <b>작은 개선</b> — 처음엔 시작 로그에도 “Fire!”가 떠서 발사 로그랑 헷갈렸어요. 그래서 로그 문구를 <b>상황별</b>(시작 · 발사 · 장전 완료 · 이미 가득참)로 나눴어요.</div>
+</section>
+
+<section class="rsx" id="a8"><div class="rh"><span class="rn">08</span><span class="rk">PLAY</span><h3>플레이 · 테스트</h3></div>
+<div class="con am-vid am-rv"><div class="ct"><i></i><i></i><i></i><span>UE5 · Play In Editor · 최종 테스트</span></div><video src="img/ammo01/test.mp4" poster="img/ammo01/test_poster.jpg" autoplay muted loop playsinline></video></div>
+<p class="cap">↑ 실제 테스트 영상 · Print String은 새 글이 위에 쌓여서 숫자가 거꾸로(0 → 9) 보여요</p>
+<table class="am-tests am-rv"><thead><tr><th>테스트</th><th>기대한 결과</th><th>결과</th></tr></thead><tbody>
+<tr style="--d:.2s"><td>🖱️ 계속 클릭하기</td><td>10 → 0에서 <b>멈춤</b> (음수 없음)</td><td><em>✓ PASS</em></td></tr>
+<tr style="--d:.5s"><td>⌨️ 덜 찼을 때 R</td><td>장전 완료 · <b>10 / 10</b></td><td><em>✓ PASS</em></td></tr>
+<tr style="--d:.8s"><td>⌨️ 꽉 찼을 때 R</td><td><b>이미 가득참!</b> · 장전 안 함</td><td><em>✓ PASS</em></td></tr>
+</tbody></table>
+<h4 class="am-sub">🎮 직접 해보기</h4>
+<div class="am-try am-rv"><div class="am-hud sm" data-hud="try"><div class="am-hudt"><span>AMMO</span><b class="am-num">10</b><em>/ 10</em></div><div class="am-pips"></div><div class="am-act">READY</div></div>
+<div class="am-tryr"><div class="am-btns"><button class="btn p" data-try="fire">🖱️ 발사</button><button class="btn" data-try="reload">⌨️ R 재장전</button></div><div class="am-logb" id="amTryLog"><div class="mu">버튼을 눌러 보세요 — 0발에서 쏘거나, 꽉 찼을 때 R을 눌러 보기!</div></div></div></div>
+</section>
+
+<section class="rsx" id="a9"><div class="rh"><span class="rn">09</span><span class="rk">NEXT</span><h3>회고 · 다음 레벨</h3></div>
+<div class="retro"><div><b>★ 잘한 점</b><p>노드부터 잇지 않고 <b>로직 그림 → 블루프린트</b> 순서로 만들었다. 그림 단계에서 버그 2개를 미리 잡았고, 블루프린트 버그 2개는 <b>테스트로 직접</b> 찾아 고쳤다.</p></div><div><b>▲ 다음엔</b><p>① 발사 False에 <b>“총알 없음!”</b> 출력 ② 예비 탄약 <b>ReserveAmmo</b> 추가 ③ 총이 늘어나면 <b>BP_Weapon</b>으로 옮기기</p></div></div>
+<div class="am-lvl am-rv"><span>EXP</span><div><i></i></div><b>LV.09 CLEAR ✦</b></div>
+<p class="cap">✎ 회고는 초안이에요 — 내 느낌대로 고쳐 쓰기</p>
+</section>
+
+<div class="endnav"><span class="btn" data-post="for01">← LV.02 인벤토리 검사</span><span class="nx">다음 글 · LV.10 문 열기 퍼즐 <em>■ LOCKED</em></span></div>
+</div></div></template>
+<style>
+/* ===== LV.09 총알 재장전 (언리얼 미니게임) ===== */
+.cart.ue.on{background:linear-gradient(160deg,#bfe3ff,#c6efda)}
+.cart.ue .lab{position:relative;overflow:hidden}
+.cart.ue .lab::after{content:"UE";position:absolute;right:6px;bottom:4px;font-family:"IBM Plex Mono";font-size:9px;letter-spacing:.1em;color:#2f9e75}
+.am-rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.3,1.3,.5,1)}
+.am-rv.in{opacity:1;transform:none}
+.am-sub{font-family:"IBM Plex Mono";font-weight:500;font-size:10.5px;letter-spacing:.18em;color:var(--muted);margin:18px 0 8px}
+/* HUD */
+.am-hud{background:#2f2745;color:#f1eafe;border:1.4px solid var(--ink);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;box-shadow:0 4px 0 var(--ink)}
+.am-hudt{display:flex;align-items:baseline;gap:6px;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.14em;color:#cfc3ee}
+.am-hudt b{font-size:34px;font-weight:500;color:#fff0b3;letter-spacing:0;margin-left:auto;display:inline-block;min-width:44px;text-align:right}
+.am-hudt em{font-style:normal}
+.am-hud.sm .am-hudt b{font-size:26px}
+.am-pips{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
+.am-pips i{height:20px;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#ffe28a,#e0a84a);border:1px solid #7b5a2a;transition:transform .25s,opacity .25s,background .25s}
+.am-hud.sm .am-pips i{height:14px}
+.am-pips i.off{background:#3a3156;border-color:#5a4f7a;transform:translateY(3px);opacity:.6}
+.am-pips i.new{animation:amIn .45s cubic-bezier(.3,1.6,.5,1)}
+@keyframes amIn{from{transform:translateY(-14px) scale(.6);opacity:0}}
+.am-act{font-family:"IBM Plex Mono";font-size:11px;text-align:center;background:#3a3156;border-radius:999px;padding:3px 8px;color:#cfc3ee}
+.am-hud.fire .am-act{background:#ffc8dd;color:#2f2745}.am-hud.fire .am-num{animation:fxBump .35s}
+.am-hud.empty .am-act{background:#ff8fa3;color:#2f2745;animation:amShake .4s}
+.am-hud.reload .am-act{background:#c6efda;color:#2f2745}
+.am-hud.full .am-act{background:#fff0b3;color:#2f2745}
+@keyframes amShake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.am-hero{display:grid;grid-template-columns:260px 1fr;gap:12px;margin-top:14px;align-items:stretch}
+.am-heroc{background:#fff;border:1.4px solid var(--ink);border-radius:16px;padding:12px 16px}
+.am-heroc small{font-family:"IBM Plex Mono";font-size:9.5px;letter-spacing:.14em;color:var(--muted)}
+.am-heroc ul{list-style:none;margin-top:6px}.am-heroc li{font-size:13.5px;padding:4px 0;border-top:1px dashed #e6dcf1}.am-heroc li:first-child{border:0}
+/* 변수 · 연산자 · 선 */
+.am-vars{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.am-var{border:1.4px solid var(--ink);border-radius:16px;padding:10px 14px 12px;background:#fff}
+.am-var.v1{background:#fdf2f7}.am-var.v2{background:#f4f0fd}
+.am-var small{font-family:"IBM Plex Mono";font-size:9.5px;color:var(--muted)}
+.am-var b{display:block;font-family:"Gowun Batang";font-size:17px;margin-top:2px}
+.am-var>span{font-size:12px;color:var(--muted)}
+.am-box{position:relative;height:26px;margin-top:8px;border:1.4px solid var(--ink);border-radius:999px;background:#fff;overflow:hidden}
+.am-fill{position:absolute;left:0;top:0;bottom:0;width:100%;background:repeating-linear-gradient(90deg,#ffc8dd 0 calc(10% - 2px),#fff 0 10%);transition:width .35s}
+.am-var.v2 .am-fill{background:repeating-linear-gradient(90deg,#dccbf7 0 calc(10% - 2px),#fff 0 10%)}
+.am-box em{position:absolute;right:10px;top:3px;font-style:normal;font-family:"IBM Plex Mono";font-size:12px}
+.am-ops{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.am-ops div{background:#fff;border:1.4px solid var(--ink);border-radius:14px;padding:10px;text-align:center;animation:amCard 4s var(--d) infinite}
+.am-ops code{display:inline-block;font-size:18px!important;padding:2px 10px!important;background:#2f2745!important;color:#fff0b3;border-radius:8px!important}
+.am-ops b{display:block;font-family:"Gowun Batang";font-size:15px;margin-top:6px}
+.am-ops small{display:block;font-size:11px;color:var(--muted);line-height:16px;margin-top:2px}
+@keyframes amCard{0%,22%{transform:translateY(-5px);box-shadow:0 5px 0 var(--ink);background:#fff0b3}26%,100%{transform:none;box-shadow:none;background:#fff}}
+.am-wires{border:1.4px solid var(--ink);border-radius:16px;overflow:hidden;background:#faf6fd;background-image:radial-gradient(#e6dcf1 1.5px,transparent 2px);background-size:16px 16px}
+.am-wires svg{display:block;width:100%}
+/* 설계 타임라인 */
+.am-tl{position:relative;display:grid;gap:14px;padding-left:22px;margin-top:10px}
+.am-tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;border-left:2px dotted #c8b6de}
+.am-ver{position:relative;background:#fff;border:1.4px solid var(--ink);border-radius:18px;padding:12px 14px}
+.am-ver::before{content:"";position:absolute;left:-21px;top:16px;width:12px;height:12px;border-radius:50%;background:#ffc8dd;border:1.4px solid var(--ink)}
+.am-ver.final{background:#f3fbf6}.am-ver.final::before{background:#c6efda;box-shadow:0 0 0 4px rgba(198,239,218,.6)}
+.am-vh{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.am-vh b{font-family:"Gowun Batang";font-size:16px}
+.am-tag{font-family:"IBM Plex Mono";font-size:10px;background:#2f2745;color:#fff0b3;border-radius:6px;padding:1px 7px}
+.am-stamp{margin-left:auto;font-style:normal;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;border:2px solid;border-radius:6px;padding:1px 8px;transform:rotate(-6deg)}
+.am-stamp.bug{color:#e07aa3}.am-stamp.ok{color:#2f9e75}
+.am-rv.in .am-stamp{animation:amStamp .5s .3s both cubic-bezier(.3,1.6,.5,1)}
+@keyframes amStamp{from{transform:rotate(-6deg) scale(2.2);opacity:0}}
+.am-note{margin-top:8px;font-size:13.5px;line-height:22px}
+.am-fix{display:block;margin-top:8px;background:#e5f6ee;border-radius:10px;padding:6px 10px}
+.am-q{background:#fff0b3;border-radius:12px;padding:8px 12px;font-size:13.5px;line-height:22px;margin-bottom:10px}
+.am-flows{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.am-flows figure{background:#fff;border:1.4px dashed #d9cbe8;border-radius:14px;padding:6px}
+.am-flows figcaption{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.1em;color:var(--muted);padding:2px 6px}
+.am-flows svg{display:block;width:100%}
+/* 스크린샷 */
+.am-shot{position:relative;border:1.4px solid var(--ink);border-radius:14px;overflow:hidden;background:#1d1a26;cursor:zoom-in;margin:0}
+.am-shot img{display:block;width:100%;height:auto;transition:transform .4s}
+.am-shot:hover img{transform:scale(1.02)}
+.am-shot::after{content:"⤢ 크게";position:absolute;right:8px;top:8px;font-family:"IBM Plex Mono";font-size:10px;background:#fff;border:1.2px solid var(--ink);border-radius:999px;padding:1px 8px;opacity:0;transition:opacity .2s}
+.am-shot:hover::after{opacity:1}
+.am-shot figcaption{background:#fff;border-top:1.4px solid var(--ink);padding:7px 12px;font-size:12.5px;line-height:18px}
+.am-lb{position:fixed;inset:0;z-index:90;background:rgba(47,39,69,.82);display:flex;align-items:center;justify-content:center;padding:30px;opacity:0;pointer-events:none;transition:opacity .25s;cursor:zoom-out}
+.am-lb.show{opacity:1;pointer-events:auto}
+.am-lb img{max-width:96vw;max-height:90vh;border-radius:12px;border:2px solid #fff;transform:scale(.94);transition:transform .3s}
+.am-lb.show img{transform:none}
+/* 시뮬레이터 */
+.am-sim{border:1.4px solid var(--ink);border-radius:18px;overflow:hidden;background:#faf6fd}
+.am-simh{display:flex;justify-content:space-between;padding:8px 14px;border-bottom:1.4px solid var(--ink);background:#f7f0fb;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.1em;color:var(--muted)}
+.am-simh span:last-child{color:#e07aa3;letter-spacing:0;font-size:12px}
+.am-simb{display:grid;grid-template-columns:1fr 176px;gap:12px;padding:12px}
+.am-lanes{display:flex;flex-direction:column;gap:6px}
+.am-lane{display:flex;align-items:center;gap:4px;padding:6px;border-radius:12px;border:1.2px dashed transparent;transition:background .3s,border-color .3s}
+.am-lane.act{background:#fff;border-color:#c8b6de}
+.am-n{flex:1;background:#fff;border:1.4px solid var(--ink);border-radius:10px;padding:6px 4px;font-size:11.5px;text-align:center;white-space:nowrap;transition:transform .25s,box-shadow .25s,background .25s}
+.am-n.ev{border-radius:999px;background:#ffe3ee}.am-n.q{background:#fff8d6}.am-n.set{background:#e9f8f0}.am-n.pr{background:#f0e9fc}
+.am-n.hot,.am-alt.hot{transform:translateY(-3px) scale(1.04);box-shadow:0 4px 0 var(--ink),0 0 0 3px #ffc8dd;background:#fff0b3}
+.am-ar{font-style:normal;color:var(--muted);font-size:12px}
+.am-alt{margin:-2px 0 2px 26px;font-size:11.5px;color:var(--muted);border-radius:8px;padding:3px 8px;align-self:flex-start;transition:all .25s}
+.am-alt.hot{color:var(--ink)}
+.am-side{display:flex;flex-direction:column;gap:8px}
+.am-log{flex:1;border:1.4px solid var(--ink);border-radius:12px;overflow:hidden;background:#2f2745;display:flex;flex-direction:column;min-height:120px}
+.am-logh{font-family:"IBM Plex Mono";font-size:9.5px;letter-spacing:.14em;color:#cfc3ee;background:#3a3156;padding:4px 10px}
+.am-logb{padding:6px 10px;font-family:"IBM Plex Mono";font-size:11px;line-height:17px;color:#7fd8ff;overflow:hidden;max-height:150px}
+.am-logb div{animation:amLog .35s}
+.am-logb div:first-child{color:#bff0ff}
+.am-logb .mu{color:#a99cc8;font-family:"Gowun Dodum"}
+@keyframes amLog{from{opacity:0;transform:translateY(-8px)}}
+.am-say{text-align:center;font-size:13.5px;background:#fff;border-top:1.4px solid var(--ink);padding:8px 12px;min-height:36px}
+.am-say.pop{animation:amSay .4s}
+@keyframes amSay{40%{background:#fff0b3}}
+/* 만들기 단계 */
+.am-step{background:#fff;border:1.4px solid var(--ink);border-radius:18px;padding:12px 16px 14px;margin-top:12px}
+.am-sh{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.am-no{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.14em;background:#ffc8dd;border:1.2px solid var(--ink);border-radius:999px;padding:1px 9px}
+.am-sh b{font-family:"Gowun Batang";font-size:16.5px}
+.am-step>p{font-size:14px!important;line-height:24px!important;margin:6px 0 10px}
+.am-ba{margin:8px 0}
+.am-bat{display:flex;gap:6px;margin-bottom:8px}
+.am-bat button{font-size:12px;border:1.4px solid var(--ink);border-radius:999px;padding:5px 12px;background:#fff;transition:all .2s}
+.am-bat button.on{background:var(--ink);color:#fff;box-shadow:0 3px 0 #3d3153}
+.am-bat button[data-b="1"]:not(.on){animation:amHint 1.6s infinite}
+@keyframes amHint{50%{background:#fff0b3}}
+.am-bav .am-shot{display:none}
+.am-bav .am-shot.on{display:block;animation:amFade .4s}
+@keyframes amFade{from{opacity:0;transform:scale(.98)}}
+.am-pair{display:grid;grid-template-columns:230px 1fr;gap:10px;align-items:center;margin-top:10px}
+.am-pair .call{margin:0}
+.am-seqs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.am-seq{display:flex;align-items:center;gap:6px;flex-wrap:wrap;border:1.4px solid var(--ink);border-radius:14px;padding:8px 12px;background:#fff}
+.am-seq small{width:100%;font-family:"IBM Plex Mono";font-size:9.5px;letter-spacing:.12em;color:var(--muted)}
+.am-seq span{font-family:"IBM Plex Mono";font-size:13px;background:#f1e9fa;border-radius:8px;padding:2px 8px;opacity:0;animation:amSeq 5s var(--d) infinite}
+.am-seq span.x{background:#ff8fa3;color:#fff}.am-seq span.o{background:#c6efda}
+.am-seq.bad{background:#fff5f7}.am-seq.good{background:#f3fbf6}
+@keyframes amSeq{0%{opacity:0;transform:translateY(6px)}8%,80%{opacity:1;transform:none}100%{opacity:0}}
+.am-cmp{display:flex;align-items:center;gap:10px;margin:8px 0}
+.am-cmp div{flex:1;background:#faf6fd;border:1.4px solid var(--ink);border-radius:14px;padding:8px 12px;font-size:13px}
+.am-cmp small{display:block;font-family:"IBM Plex Mono";font-size:9.5px;color:var(--muted)}
+.am-cmp b{display:block;color:#e07aa3;margin-top:2px}
+.am-cmp i{font-style:normal;font-family:"IBM Plex Mono";font-size:18px}
+/* 버그 */
+.am-score{display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid var(--ink);border-radius:16px;padding:10px 16px;margin-bottom:10px}
+.am-score div{background:#fff5f7;border:1.4px solid var(--ink);border-radius:12px;padding:4px 14px;text-align:center}
+.am-score div.ok{background:#e5f6ee}
+.am-score small{display:block;font-family:"IBM Plex Mono";font-size:9px;letter-spacing:.1em;color:var(--muted)}
+.am-score b{font-family:"IBM Plex Mono";font-size:26px;font-weight:500}
+.am-score>i{font-style:normal;font-size:18px}
+.am-score p{font-size:13px!important;line-height:20px!important;color:var(--muted)}
+.am-bug{position:relative;margin-top:14px}
+.am-bt{position:absolute;left:12px;top:-9px;z-index:1;font-family:"IBM Plex Mono";font-size:9.5px;letter-spacing:.12em;background:#2f2745;color:#fff0b3;border-radius:999px;padding:1px 9px}
+.am-bug .tsx div.ok{position:relative}
+.am-rv.in .tsx div.ok{animation:amOk .8s .4s both}
+@keyframes amOk{from{background:#fff}}
+/* 플레이 */
+.am-vid video{display:block;width:100%;background:#000}
+.am-tests{width:100%;border-collapse:separate;border-spacing:0;border:1.4px solid var(--ink);border-radius:14px;overflow:hidden;font-size:13px;background:#fff;margin-top:10px}
+.am-tests th{background:#f7f0fb;font-family:"IBM Plex Mono";font-weight:500;font-size:10.5px;padding:7px 10px;text-align:left;border-bottom:1.4px solid var(--ink)}
+.am-tests td{padding:7px 10px;border-top:1px dashed #e6dcf1}
+.am-tests em{font-style:normal;font-family:"IBM Plex Mono";font-size:11px;color:#2f9e75;border:1.6px solid #2f9e75;border-radius:6px;padding:0 6px;display:inline-block}
+.am-rv.in .am-tests em,.am-tests.in em{animation:amStamp .5s var(--d,0s) both cubic-bezier(.3,1.6,.5,1)}
+.am-tests tr{--d:0s}
+.am-try{display:grid;grid-template-columns:230px 1fr;gap:12px;align-items:stretch}
+.am-tryr{display:flex;flex-direction:column;gap:8px}
+.am-btns{display:flex;gap:8px}
+.am-btns .btn{font:inherit;font-size:13.5px}
+.am-btns .btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--ink)}
+.am-tryr .am-logb{flex:1;background:#2f2745;border:1.4px solid var(--ink);border-radius:12px;min-height:110px}
+.am-lvl{display:flex;align-items:center;gap:10px;margin-top:12px;font-family:"IBM Plex Mono";font-size:11px}
+.am-lvl div{flex:1;height:10px;border-radius:999px;border:1.4px solid var(--ink);background:#fff;overflow:hidden}
+.am-lvl i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffc8dd,#dccbf7,#bfe3ff);transition:width 1.6s cubic-bezier(.3,1,.5,1) .2s}
+.am-lvl.in i{width:100%}
+.am-lvl b{font-weight:500;color:#e07aa3}
+</style>
+<script>
+(function(){
+  const MAX=10;let T=[],IO=null;
+  const stop=()=>{T.forEach(clearInterval);T=[];if(IO){IO.disconnect();IO=null}};
+  const every=(fn,ms)=>{const t=setInterval(fn,ms);T.push(t);return t};
+  // HUD: 총알 칸 10개 그리기
+  function hud(h,n,act,msg){
+    if(!h)return;const P=h.querySelector('.am-pips');
+    if(!P.children.length)for(let i=0;i<MAX;i++)P.appendChild(document.createElement('i'));
+    [...P.children].forEach((p,i)=>{const was=p.classList.contains('off'),off=i>=n;p.classList.toggle('off',off);
+      if(was&&!off&&act==='reload'){p.classList.remove('new');void p.offsetWidth;p.classList.add('new');p.style.animationDelay=(i*.04)+'s'}});
+    const num=h.querySelector('.am-num');num.textContent=n;
+    h.classList.remove('fire','empty','reload','full');
+    if(act){void h.offsetWidth;h.classList.add(act)}
+    if(msg!==undefined)h.querySelector('.am-act').textContent=msg;
+  }
+  function logTo(box,txt,max){if(!box)return;const m=box.querySelector('.mu');if(m)m.remove();
+    const d=document.createElement('div');d.textContent=txt;box.prepend(d);while(box.children.length>(max||8))box.lastChild.remove()}
+
+  // (1) 첫 장 HUD: 쏘고 → 비고 → 재장전, 반복 (2장 변수 상자도 같이 움직여요)
+  function hero(root){
+    const h=root.querySelector('[data-hud=hero]');let n=MAX,st=0,w=0;
+    const sync=()=>{root.querySelectorAll('[data-sync=num]').forEach(e=>e.textContent=n);root.querySelectorAll('[data-sync=fill]').forEach(e=>e.style.width=(n*10)+'%')};
+    hud(h,n,null,'READY');sync();
+    every(()=>{if(!h.isConnected)return stop();if(w>0){w--;return}
+      if(n>0){n--;hud(h,n,'fire','💥 탕!  Current − 1')}
+      else if(st===0){hud(h,0,'empty','⛔ 0 > 0 ? 거짓 → 안 쏴짐');st=1;w=3}
+      else{n=MAX;hud(h,n,'reload','🔄 R · Current = Max');st=0;w=4}
+      sync()},520);
+  }
+
+  // (2) 5장 자동 재생
+  function sim(root){
+    const S=root.querySelector('#amSim');if(!S)return;
+    const nodes=[...S.querySelectorAll('[data-n]')],h=S.querySelector('[data-hud=sim]'),L=S.querySelector('#amLog'),say=S.querySelector('#amSay'),st=S.querySelector('#amStep');
+    const steps=[];let c=MAX;const P=(n,s,o)=>steps.push(Object.assign({n:[].concat(n),s},o||{}));
+    P('b0','▶️ 게임 시작! BeginPlay가 실행돼요',{lab:'시작 세팅',reset:1});
+    P('b1','🔄 MaxAmmo(10)를 가져와서 CurrentAmmo에 넣기',{cur:MAX,act:'reload',msg:'Current = Max'});
+    P('b2','🖨️ 화면에 출력',{log:'CurrentAmmo: 10 / 10'});
+    const click=fast=>{
+      if(c>0){const b=c;c--;
+        if(fast)P(['f0','f1','f2','f3'],'💥 탕! '+b+' → '+c,{cur:c,act:'fire',msg:'💥 탕!',log:'CurrentAmmo: '+c+' / 10',lab:'연사'});
+        else{P('f0','🖱️ 좌클릭!',{lab:'발사'});P('f1','❓ '+b+' > 0 ? → 참 ✅ 통과');P('f2','➖ '+b+' − 1 = '+c,{cur:c,act:'fire',msg:'💥 탕!'});P('f3','🖨️ 출력',{log:'CurrentAmmo: '+c+' / 10'})}}
+      else{P('f0','🖱️ 빈 탄창에서 좌클릭!',{lab:'빈 탄창'});P('f1','❓ 0 > 0 ? → 거짓 ❌');P('fx','⛔ False엔 선이 없어서 멈춤 — 음수로 안 내려가요!',{cur:0,act:'empty',msg:'⛔ 안 쏴짐'})}};
+    const reload=()=>{P('r0','⌨️ R키!',{lab:'재장전'});
+      if(c===MAX){P('r1','❓ 10 == 10 ? → 참 (꽉 참)');P('r4','🖨️ 이미 가득참! — 장전 안 해요',{act:'full',msg:'이미 가득참',log:'이미 가득참!'})}
+      else{P('r1','❓ '+c+' == 10 ? → 거짓 (덜 참)');c=MAX;P('r2','🔄 CurrentAmmo = MaxAmmo → 10',{cur:MAX,act:'reload',msg:'🔄 재장전'});P('r3','🖨️ 장전 완료',{log:'장전 완료 · CurrentAmmo: 10 / 10'})}};
+    click();click();click();reload();reload();for(let i=0;i<MAX;i++)click(true);click();reload();
+    let k=0,w=0;
+    function tick(){
+      if(!S.isConnected)return stop();
+      if(w>0){w--;if(!w)k=0;return}
+      const s=steps[k];
+      if(s.reset){L.innerHTML='';hud(h,0,null,'—')}
+      nodes.forEach(e=>e.classList.toggle('hot',s.n.includes(e.dataset.n)));
+      S.querySelectorAll('.am-lane').forEach(l=>l.classList.toggle('act',!!l.querySelector('.hot')));
+      if(s.lab)st.textContent=s.lab;
+      if(s.cur!==undefined||s.act)hud(h,s.cur!==undefined?s.cur:+h.querySelector('.am-num').textContent,s.act,s.msg);
+      if(s.log)logTo(L,s.log,7);
+      say.textContent=s.s;say.classList.remove('pop');void say.offsetWidth;say.classList.add('pop');
+      k++;if(k>=steps.length){w=5;st.textContent='🏁 끝 · 다시 재생'}
+    }
+    hud(h,0,null,'—');every(tick,760);
+  }
+
+  // (3) 8장 직접 해보기
+  let tc=MAX;
+  function tryInit(root){tc=MAX;hud(root.querySelector('[data-hud=try]'),tc,null,'READY')}
+  function tryAct(k){
+    const h=document.querySelector('#mbd [data-hud=try]'),L=document.querySelector('#mbd #amTryLog');if(!h)return;
+    if(k==='fire'){if(tc>0){tc--;hud(h,tc,'fire','💥 탕!');logTo(L,'CurrentAmmo: '+tc+' / 10')}else{hud(h,0,'empty','⛔ 0 > 0 ? 거짓');logTo(L,'(False → 멈춤 · 출력 없음)')}}
+    else{if(tc===MAX){hud(h,tc,'full','이미 가득참');logTo(L,'이미 가득참!')}else{tc=MAX;hud(h,tc,'reload','🔄 재장전');logTo(L,'장전 완료 · CurrentAmmo: 10 / 10')}}
+  }
+
+  // (4) 스크롤하면 나타나기 + 숫자 세기
+  function reveal(root){
+    const els=[...root.querySelectorAll('.am-rv')];
+    const on=e=>{if(e.classList.contains('in'))return;e.classList.add('in');
+      e.querySelectorAll('[data-count]').forEach(b=>{let v=0;const to=+b.dataset.count;const t=setInterval(()=>{b.textContent=++v;if(v>=to)clearInterval(t)},220)})};
+    if(!('IntersectionObserver' in window)){els.forEach(on);return}
+    IO=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)on(x.target)}),{root,threshold:.12});
+    els.forEach(e=>IO.observe(e));
+  }
+
+  // 클릭: 전/후 비교 · 확대 · 직접 해보기
+  let lb=null;
+  document.addEventListener('click',e=>{
+    const b=e.target.closest('.am-bat button');
+    if(b){const w=b.closest('[data-ba]');w.querySelectorAll('.am-bat button').forEach(x=>x.classList.toggle('on',x===b));
+      w.querySelectorAll('.am-bav .am-shot').forEach((f,i)=>f.classList.toggle('on',i==b.dataset.b));return}
+    const z=e.target.closest('#mbd [data-zoom]');
+    if(z){if(!lb){lb=document.createElement('div');lb.className='am-lb';lb.innerHTML='<img alt="">';document.body.appendChild(lb);lb.addEventListener('click',()=>lb.classList.remove('show'))}
+      const im=z.querySelector('img');lb.firstChild.src=im.src;lb.firstChild.alt=im.alt;requestAnimationFrame(()=>lb.classList.add('show'));return}
+    const t=e.target.closest('[data-try]');if(t)tryAct(t.dataset.try);
+  });
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&lb&&lb.classList.contains('show')){lb.classList.remove('show');e.stopImmediatePropagation()}},true);
+
+  const mbd=document.getElementById('mbd');
+  new MutationObserver(()=>{const r=mbd.querySelector('[data-anim="ammo01"]');stop();if(r){hero(r);sim(r);tryInit(r);reveal(r)}}).observe(mbd,{childList:true});
 })();
 </script>
 </body></html>
