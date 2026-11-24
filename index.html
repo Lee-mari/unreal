@@ -310,12 +310,11 @@ code{font-family:"IBM Plex Mono";font-size:12.5px;background:#f1e9fa;border-radi
     <div class="mh"><svg class="bg" viewBox="0 0 780 230" preserveAspectRatio="xMidYMid slice"><g transform="translate(330 40) scale(0.5 0.5)" class="cl"><g fill="none" stroke="#5b4a7a" stroke-width="6.4"><circle cx="0" cy="0" r="22"/><circle cx="26" cy="-12" r="28"/><circle cx="58" cy="-6" r="24"/><circle cx="84" cy="4" r="18"/><circle cx="40" cy="10" r="22"/><circle cx="-20" cy="8" r="16"/><circle cx="104" cy="12" r="12"/></g><g fill="#fff"><circle cx="0" cy="0" r="22"/><circle cx="26" cy="-12" r="28"/><circle cx="58" cy="-6" r="24"/><circle cx="84" cy="4" r="18"/><circle cx="40" cy="10" r="22"/><circle cx="-20" cy="8" r="16"/><circle cx="104" cy="12" r="12"/></g></g><path class="sp" transform="translate(420 150) scale(0.8)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2 Z" fill="#fff0b3" stroke="#5b4a7a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path class="sp" transform="translate(700 200) scale(0.6)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2 Z" fill="#fff" stroke="#5b4a7a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="fl" id="mfl"></div><div class="tx"><span class="k" id="mk2"></span><h2 id="mt"></h2><div class="m" id="mm"></div></div></div>
     <div class="mbd" id="mbd"></div></div></div>
-  <template id="tp-gohome"><div class="bpw"><div class="bph"><span>BP_GoHome · Event Graph</span><span class="mu">노드를 따라가면 내가 만든 시스템이 보여요</span></div><div class="bp" data-links='[["e1", "n2", "f"], ["o2", "bi", "f"], ["bt", "hp", "f"], ["wo", "wi", "d"], ["mo", "mi", "d"], ["ox", "ui1", "d"], ["wu", "ui2", "d"]]'><svg class="bw"></svg><div class="bn" style="left:14px;top:34px;width:150px;--c:#fff0ad"><div class="bh"><span>◆</span>Event 잠수 시작</div><div class="bb"><div class="br"><span class="sp"><i class="px" data-out="e1"></i></span></div></div></div><div class="bn" style="left:258px;top:14px;width:232px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>OxygenComponent<em>CODE</em></div><div class="bb"><b class="bt2">산소</b><div class="br"><i class="px" data-in="n2"></i><span class="mu">흐름</span><span class="sp"><i class="px" data-out="o2"></i></span></div><div class="br">안전지대 밖 <span class="mu">초마다 감소</span><span class="sp">✓</span></div><div class="br">SafeZone 안 <span class="mu">초마다 회복</span><span class="sp">✓</span></div><div class="br">몬스터 물기 <span class="mu">DataAsset 속도</span><span class="sp">✓</span></div><div class="br"><i class="pd" data-in="wi" style="--pc:#ffdcbc"></i><span class="mu">추가 소모</span><span class="sp"></span></div><div class="br"><i class="pd" data-in="mi" style="--pc:#c6efda"></i><span class="mu">MaxOxygen</span><span class="sp"><span class="mu">현재 O₂</span><i class="pd" data-out="ox" style="--pc:#bfe3ff"></i></span></div></div></div><div class="bn" style="left:516px;top:22px;width:176px;--c:#dccbf7"><div class="bh"><span>◇</span>Branch · 산소 = 0 ?</div><div class="bb"><div class="br"><i class="px" data-in="bi"></i><span class="sp">True <i class="px" data-out="bt"></i></span></div><div class="br"><span class="sp">False <i class="px" data-out="bf"></i></span></div></div></div><div class="bn" style="left:516px;top:146px;width:176px;--c:#ffc8dd"><div class="bh"><span>ƒ</span>HP 초마다 급감</div><div class="bb"><div class="br"><i class="px" data-in="hp"></i><span class="mu">물기 = 직접 피해</span><span class="sp"></span></div></div></div><div class="bn" style="left:14px;top:150px;width:214px;--c:#ffdcbc"><div class="bh"><span>ƒ</span>WeightSystem<em>CODE</em></div><div class="bb"><b class="bt2">무게</b><div class="br">아이템 무게 합산<span class="sp">✓</span></div><div class="br">기준 초과분 → Curve<span class="sp"><i class="pd" data-out="wo" style="--pc:#ffdcbc"></i></span></div><div class="br"><span class="mu">UI로 보내기</span><span class="sp"><i class="pd" data-out="wu" style="--pc:#ffdcbc"></i></span></div></div></div><div class="bn" style="left:14px;top:330px;width:214px;--c:#c6efda"><div class="bh"><span>ƒ</span>Upgrade Station<em>CODE</em></div><div class="bb"><b class="bt2">강화</b><div class="br">상호작용 → 강화 UI<span class="sp">✓</span></div><div class="br">서버 요청 (RPC)<span class="sp">✓</span></div><div class="br"><span class="mu">최대 산소 +</span><span class="sp"><i class="pd" data-out="mo" style="--pc:#c6efda"></i></span></div></div></div><div class="bn" style="left:516px;top:262px;width:176px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>HUD · UMG<em>UI</em></div><div class="bb"><b class="bt2">UI</b><div class="br"><i class="pd" data-in="ui1" style="--pc:#bfe3ff"></i>산소 바<span class="sp"></span></div><div class="br"><i class="pd" data-in="ui2" style="--pc:#ffdcbc"></i>현재 / 기준 + 초과<span class="sp"></span></div><div class="br">강화 창<span class="sp">✓</span></div></div></div><div class="bc" style="left:258px;top:318px;width:232px;height:140px"><b>// 트러블슈팅</b><p><em>문제</em> 밸런스를 바꿀 때마다 코드 수정</p><p><em>원인</em> 무게 계산식이 코드에 고정</p><p><em>해결</em> Curve 에셋 → 에디터에서 조절</p></div><div class="bn" style="left:258px;top:480px;width:232px;--c:#fff0ad"><div class="bh"><span>▤</span>GDD · 기본 기획<em>DESIGN</em></div><div class="bb"><div class="br">핵심 규칙 문서 작성<span class="sp">✓</span></div></div></div><div class="bn" style="left:516px;top:450px;width:176px;--c:#ffffff"><div class="bh"><span>▶</span>Play · 영상 보기</div><div class="bb"><div class="br"><i class="px" data-in="pl"></i><span class="mu">30–60초 플레이 영상</span><span class="sp"></span></div></div></div></div><div class="bpl"><span><i class="px"></i> 실행 흐름</span><span><i class="pd" style="--pc:#ffc8dd"></i> 데이터</span><span class="tg">CODE · UI · DESIGN = 내가 맡은 부분</span></div></div><div class="mb"><span class="btn p">▶ 플레이 영상</span><span class="btn">GitHub ↗</span><span class="btn">기획서 PDF</span></div></template><template id="tp-lostark"><section class="mblk"><h4>내가 맡은 것</h4><ul class="ml"><li>레퍼런스 게임 맵 분석</li><li>맵 흐름 · 동선 설계</li><li>시야 · 랜드마크 배치</li><li>블록아웃 → 디테일</li></ul></section><section class="mblk"><h4>레벨 디자인 포인트</h4><div class="pts"><div><b>01</b>동선<small>길을 잃지 않게 큰 흐름부터</small></div><div><b>02</b>시야<small>멀리서도 목표가 보이게</small></div><div><b>03</b>리듬<small>전투 · 휴식 구간 번갈아</small></div></div></section><div class="shots"><div>탑뷰 맵</div><div>블록아웃</div><div>완성 장면</div></div><div class="mb"><span class="btn p">레벨 디자인 노트 →</span><span class="btn">영상 보기</span></div></template><template id="tp-mini1"><div class="shelf"><div class="sh2"><b>GAME SHELF</b><span>배운 문법 하나로 게임 하나씩 · 새 카트리지가 계속 꽂혀요</span></div><div class="carts"><div class="cart on" data-post=if01 title=읽기><div class="lab"><small>LV.01</small><b>if문 갈림길 게임</b><span>if / else</span></div><em>✓ CLEAR</em></div><div class="cart on" data-post=for01 title=읽기><div class="lab"><small>LV.02</small><b>인벤토리 검사</b><span>for 문 + 배열</span></div><em>✓ CLEAR</em></div><div class="cart on new" data-post=pyr01 title=읽기><div class="lab"><small>LV.03</small><b>별 피라미드</b><span>이중 for 문</span></div><em>✓ CLEAR</em><i class="newb">NEW</i></div><div class="cart on ue" data-post=ammo01 title=읽기><div class="lab"><small>LV.09 · UNREAL</small><b>총알 재장전</b><span>BP · 변수 + 연산자</span></div><em>✓ CLEAR</em></div></div><div class=morebar><span class=more data-lib>MORE · 전체 미니게임 13 →</span></div></div><section class="mblk"><h4>NEW · LV.03 미리보기</h4><pre>for (int i = 1; i &lt;= 5; i++)        <span style="color:#b0739a">// 층(줄) 담당</span>
-{
-    for (int j = 1; j &lt;= i; j++)    <span style="color:#b0739a">// 별 담당 · i개만큼</span>
-        printf_s("*");
-    printf_s("\n");
-}</pre></section><div class="mb"><span class="btn p" data-post="pyr01">LV.03 포트폴리오 읽기 →</span><span class="btn" data-post="ammo01">LV.09 읽기</span><span class="btn" data-post="for01">LV.02 읽기</span><span class="btn" data-post="if01">LV.01 읽기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-about"><section class="mblk"><h4>안녕하세요, mari예요</h4><p class="mp">레벨을 그린다는 건, 누군가 걸어갈 길을 만드는 일이라고 생각해요. 경일게임아카데미에서 언리얼을 배우며 맵의 흐름을 설계하고, 산소 · 무게 · 강화 같은 시스템을 C++로 직접 움직이게 만들고 있어요.</p></section><section class="mblk"><h4>스탯</h4><div class="bars"><div><span>레벨 디자인</span><i><b style="width:80%"></b></i></div><div><span>Blueprint</span><i><b style="width:60%"></b></i></div><div><span>UE C++</span><i><b style="width:60%"></b></i></div><div><span>UI (UMG)</span><i><b style="width:60%"></b></i></div><div><span>기획서</span><i><b style="width:80%"></b></i></div></div></section><section class="mblk"><h4>가방 속 도구</h4><div><span class="chip">레벨 디자인</span><span class="chip">UE5</span><span class="chip">C++</span><span class="chip">Blueprint</span><span class="chip">UMG</span><span class="chip">Git</span><span class="chip">기획서</span></div></section><div class="mb"><span class="btn p">이력서 PDF ↓</span><span class="btn">GitHub ↗</span></div></template><template id="tp-contact"><section class="mblk"><h4>편지함</h4><div class="lks"><div class="lk"><span>GitHub</span><b>Lee-mari ↗</b></div><div class="lk"><span>Blog</span><b>Lee-mari.github.io/unreal</b></div><div class="lk"><span>Mail</span><b>메일 주소</b></div><div class="lk"><span>Resume</span><b>PDF ↓</b></div></div></section><section class="mblk"><h4>한마디</h4><p class="mp">같이 게임을 만들고 싶거나, 궁금한 게 있으면 편하게 편지 주세요!</p></section><div class="mb"><span class="btn p">✉ 편지 보내기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-fps"><div class="hudx"><div class="hbar"><span>LOADOUT</span><span>숫자 키 1–5로 무기 교체</span></div><div class="slots5"><div><kbd>1</kbd><b>나이프</b><i style="width:calc((100% - 20px) * 0.2)"></i></div><div><kbd>2</kbd><b>권총</b><i style="width:calc((100% - 20px) * 0.4)"></i></div><div class=on><kbd>3</kbd><b>AK</b><i style="width:calc((100% - 20px) * 0.6)"></i></div><div><kbd>4</kbd><b>스나이퍼</b><i style="width:calc((100% - 20px) * 0.8)"></i></div><div><kbd>5</kbd><b>수류탄</b><i style="width:calc((100% - 20px) * 1.0)"></i></div></div><div class="hrow"><div class="tri"><svg viewBox="-14 -6 248 184"><path d="M110 18 L200 150 L20 150 Z" fill="none" stroke="#5b4a7a" stroke-width="1.6" stroke-dasharray="4 5"/><circle cx="110" cy="22" r="22" fill="#bfe3ff" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="200" cy="146" r="22" fill="#c6efda" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="20" cy="146" r="22" fill="#ffc8dd" stroke="#5b4a7a" stroke-width="1.6"/><text x="110" y="26" text-anchor="middle">플레이어</text><text x="200" y="150" text-anchor="middle">좀비</text><text x="20" y="150" text-anchor="middle">인간 AI</text></svg><small>3개 세력 생태계</small></div><div class="feats"><div><b>⟲ 시간 되감기</b><span>되감기 메커닉</span></div><div><b>▦ Chaos Destruction</b><span>부서지는 환경</span></div><div><b>≋ 스태미나</b><span>달리기 · 행동 소모</span></div></div></div><div class="tree"><div class="hbar"><span>ARCHITECTURE</span><span>C++ 구조</span></div><pre>AWeaponBase ─┬─ Knife · Pistol · AK · Sniper · Grenade
+  <template id="tp-gohome"><div class="bpw"><div class="bph"><span>BP_GoHome · Event Graph</span><span class="mu">노드를 따라가면 내가 만든 시스템이 보여요</span></div><div class="bp" data-links='[["e1", "n2", "f"], ["o2", "bi", "f"], ["bt", "hp", "f"], ["wo", "wi", "d"], ["mo", "mi", "d"], ["ox", "ui1", "d"], ["wu", "ui2", "d"]]'><svg class="bw"></svg><div class="bn" style="left:14px;top:34px;width:150px;--c:#fff0ad"><div class="bh"><span>◆</span>Event 잠수 시작</div><div class="bb"><div class="br"><span class="sp"><i class="px" data-out="e1"></i></span></div></div></div><div class="bn" style="left:258px;top:14px;width:232px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>OxygenComponent<em>CODE</em></div><div class="bb"><b class="bt2">산소</b><div class="br"><i class="px" data-in="n2"></i><span class="mu">흐름</span><span class="sp"><i class="px" data-out="o2"></i></span></div><div class="br">안전지대 밖 <span class="mu">초마다 감소</span><span class="sp">✓</span></div><div class="br">SafeZone 안 <span class="mu">초마다 회복</span><span class="sp">✓</span></div><div class="br">몬스터 물기 <span class="mu">DataAsset 속도</span><span class="sp">✓</span></div><div class="br"><i class="pd" data-in="wi" style="--pc:#ffdcbc"></i><span class="mu">추가 소모</span><span class="sp"></span></div><div class="br"><i class="pd" data-in="mi" style="--pc:#c6efda"></i><span class="mu">MaxOxygen</span><span class="sp"><span class="mu">현재 O₂</span><i class="pd" data-out="ox" style="--pc:#bfe3ff"></i></span></div></div></div><div class="bn" style="left:516px;top:22px;width:176px;--c:#dccbf7"><div class="bh"><span>◇</span>Branch · 산소 = 0 ?</div><div class="bb"><div class="br"><i class="px" data-in="bi"></i><span class="sp">True <i class="px" data-out="bt"></i></span></div><div class="br"><span class="sp">False <i class="px" data-out="bf"></i></span></div></div></div><div class="bn" style="left:516px;top:146px;width:176px;--c:#ffc8dd"><div class="bh"><span>ƒ</span>HP 초마다 급감</div><div class="bb"><div class="br"><i class="px" data-in="hp"></i><span class="mu">물기 = 직접 피해</span><span class="sp"></span></div></div></div><div class="bn" style="left:14px;top:150px;width:214px;--c:#ffdcbc"><div class="bh"><span>ƒ</span>WeightSystem<em>CODE</em></div><div class="bb"><b class="bt2">무게</b><div class="br">아이템 무게 합산<span class="sp">✓</span></div><div class="br">기준 초과분 → Curve<span class="sp"><i class="pd" data-out="wo" style="--pc:#ffdcbc"></i></span></div><div class="br"><span class="mu">UI로 보내기</span><span class="sp"><i class="pd" data-out="wu" style="--pc:#ffdcbc"></i></span></div></div></div><div class="bn" style="left:14px;top:330px;width:214px;--c:#c6efda"><div class="bh"><span>ƒ</span>Upgrade Station<em>CODE</em></div><div class="bb"><b class="bt2">강화</b><div class="br">상호작용 → 강화 UI<span class="sp">✓</span></div><div class="br">서버 요청 (RPC)<span class="sp">✓</span></div><div class="br"><span class="mu">최대 산소 +</span><span class="sp"><i class="pd" data-out="mo" style="--pc:#c6efda"></i></span></div></div></div><div class="bn" style="left:516px;top:262px;width:176px;--c:#bfe3ff"><div class="bh"><span>ƒ</span>HUD · UMG<em>UI</em></div><div class="bb"><b class="bt2">UI</b><div class="br"><i class="pd" data-in="ui1" style="--pc:#bfe3ff"></i>산소 바<span class="sp"></span></div><div class="br"><i class="pd" data-in="ui2" style="--pc:#ffdcbc"></i>현재 / 기준 + 초과<span class="sp"></span></div><div class="br">강화 창<span class="sp">✓</span></div></div></div><div class="bc" style="left:258px;top:318px;width:232px;height:140px"><b>// 트러블슈팅</b><p><em>문제</em> 밸런스를 바꿀 때마다 코드 수정</p><p><em>원인</em> 무게 계산식이 코드에 고정</p><p><em>해결</em> Curve 에셋 → 에디터에서 조절</p></div><div class="bn" style="left:258px;top:480px;width:232px;--c:#fff0ad"><div class="bh"><span>▤</span>GDD · 기본 기획<em>DESIGN</em></div><div class="bb"><div class="br">핵심 규칙 문서 작성<span class="sp">✓</span></div></div></div><div class="bn" style="left:516px;top:450px;width:176px;--c:#ffffff"><div class="bh"><span>▶</span>Play · 영상 보기</div><div class="bb"><div class="br"><i class="px" data-in="pl"></i><span class="mu">30–60초 플레이 영상</span><span class="sp"></span></div></div></div></div><div class="bpl"><span><i class="px"></i> 실행 흐름</span><span><i class="pd" style="--pc:#ffc8dd"></i> 데이터</span><span class="tg">CODE · UI · DESIGN = 내가 맡은 부분</span></div></div><div class="mb"><span class="btn p">▶ 플레이 영상</span><span class="btn">GitHub ↗</span><span class="btn">기획서 PDF</span></div></template><template id="tp-lostark"><section class="mblk"><h4>내가 맡은 것</h4><ul class="ml"><li>레퍼런스 게임 맵 분석</li><li>맵 흐름 · 동선 설계</li><li>시야 · 랜드마크 배치</li><li>블록아웃 → 디테일</li></ul></section><section class="mblk"><h4>레벨 디자인 포인트</h4><div class="pts"><div><b>01</b>동선<small>길을 잃지 않게 큰 흐름부터</small></div><div><b>02</b>시야<small>멀리서도 목표가 보이게</small></div><div><b>03</b>리듬<small>전투 · 휴식 구간 번갈아</small></div></div></section><div class="shots"><div>탑뷰 맵</div><div>블록아웃</div><div>완성 장면</div></div><div class="mb"><span class="btn p">레벨 디자인 노트 →</span><span class="btn">영상 보기</span></div></template><template id="tp-mini1"><div class="shelf"><div class="sh2"><b>GAME SHELF</b><span>배운 문법 하나로 게임 하나씩 · 새 카트리지가 계속 꽂혀요</span></div><div class="carts"><div class="cart on" data-post=if01 title=읽기><div class="lab"><small>LV.01</small><b>갈림길 게임</b><span>if / else</span></div><em>✓ CLEAR</em></div><div class="cart on" data-post=for01 title=읽기><div class="lab"><small>LV.02</small><b>인벤토리 검사</b><span>for 문 + 배열</span></div><em>✓ CLEAR</em></div><div class="cart on" data-post=pyr01 title=읽기><div class="lab"><small>LV.03</small><b>별 피라미드</b><span>이중 for 문</span></div><em>✓ CLEAR</em></div><div class="cart on new" data-post=lh01 title=읽기><div class="lab"><small>LV.04</small><b>미니 등대</b><span>for 문 + 입력</span></div><em>✓ CLEAR</em><i class="newb">NEW</i></div><div class="cart on ue" data-post=ammo01 title=읽기><div class="lab"><small>LV.09 · UNREAL</small><b>총알 재장전</b><span>BP · 변수 + 연산자</span></div><em>✓ CLEAR</em></div></div><div class=morebar><span class=more data-lib>MORE · 전체 미니게임 13 →</span></div></div><section class="mblk"><h4>NEW · LV.04 미리보기</h4><pre>scanf_s("%d", &amp;height);            <span style="color:#b0739a">// 높이 입력</span>
+// ③ 꼭대기 → ② 몸통 → ① 바다 (위에서부터 출력)
+for (int i = 0; i &lt; height; i++)     <span style="color:#b0739a">// 몸통 = 공백 3 + 별 3</span>
+{ … }
+for (int i = 0; i &lt; 10; i++) printf_s("~");</pre></section><div class="mb"><span class="btn p" data-post="lh01">LV.04 포트폴리오 읽기 →</span><span class="btn" data-post="pyr01">LV.03 읽기</span><span class="btn" data-post="ammo01">LV.09 읽기</span><span class="btn" data-post="for01">LV.02 읽기</span><span class="btn" data-post="if01">LV.01 읽기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-about"><section class="mblk"><h4>안녕하세요, mari예요</h4><p class="mp">레벨을 그린다는 건, 누군가 걸어갈 길을 만드는 일이라고 생각해요. 경일게임아카데미에서 언리얼을 배우며 맵의 흐름을 설계하고, 산소 · 무게 · 강화 같은 시스템을 C++로 직접 움직이게 만들고 있어요.</p></section><section class="mblk"><h4>스탯</h4><div class="bars"><div><span>레벨 디자인</span><i><b style="width:80%"></b></i></div><div><span>Blueprint</span><i><b style="width:60%"></b></i></div><div><span>UE C++</span><i><b style="width:60%"></b></i></div><div><span>UI (UMG)</span><i><b style="width:60%"></b></i></div><div><span>기획서</span><i><b style="width:80%"></b></i></div></div></section><section class="mblk"><h4>가방 속 도구</h4><div><span class="chip">레벨 디자인</span><span class="chip">UE5</span><span class="chip">C++</span><span class="chip">Blueprint</span><span class="chip">UMG</span><span class="chip">Git</span><span class="chip">기획서</span></div></section><div class="mb"><span class="btn p">이력서 PDF ↓</span><span class="btn">GitHub ↗</span></div></template><template id="tp-contact"><section class="mblk"><h4>편지함</h4><div class="lks"><div class="lk"><span>GitHub</span><b>Lee-mari ↗</b></div><div class="lk"><span>Blog</span><b>Lee-mari.github.io/unreal</b></div><div class="lk"><span>Mail</span><b>메일 주소</b></div><div class="lk"><span>Resume</span><b>PDF ↓</b></div></div></section><section class="mblk"><h4>한마디</h4><p class="mp">같이 게임을 만들고 싶거나, 궁금한 게 있으면 편하게 편지 주세요!</p></section><div class="mb"><span class="btn p">✉ 편지 보내기</span><span class="btn">GitHub ↗</span></div></template><template id="tp-fps"><div class="hudx"><div class="hbar"><span>LOADOUT</span><span>숫자 키 1–5로 무기 교체</span></div><div class="slots5"><div><kbd>1</kbd><b>나이프</b><i style="width:calc((100% - 20px) * 0.2)"></i></div><div><kbd>2</kbd><b>권총</b><i style="width:calc((100% - 20px) * 0.4)"></i></div><div class=on><kbd>3</kbd><b>AK</b><i style="width:calc((100% - 20px) * 0.6)"></i></div><div><kbd>4</kbd><b>스나이퍼</b><i style="width:calc((100% - 20px) * 0.8)"></i></div><div><kbd>5</kbd><b>수류탄</b><i style="width:calc((100% - 20px) * 1.0)"></i></div></div><div class="hrow"><div class="tri"><svg viewBox="-14 -6 248 184"><path d="M110 18 L200 150 L20 150 Z" fill="none" stroke="#5b4a7a" stroke-width="1.6" stroke-dasharray="4 5"/><circle cx="110" cy="22" r="22" fill="#bfe3ff" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="200" cy="146" r="22" fill="#c6efda" stroke="#5b4a7a" stroke-width="1.6"/><circle cx="20" cy="146" r="22" fill="#ffc8dd" stroke="#5b4a7a" stroke-width="1.6"/><text x="110" y="26" text-anchor="middle">플레이어</text><text x="200" y="150" text-anchor="middle">좀비</text><text x="20" y="150" text-anchor="middle">인간 AI</text></svg><small>3개 세력 생태계</small></div><div class="feats"><div><b>⟲ 시간 되감기</b><span>되감기 메커닉</span></div><div><b>▦ Chaos Destruction</b><span>부서지는 환경</span></div><div><b>≋ 스태미나</b><span>달리기 · 행동 소모</span></div></div></div><div class="tree"><div class="hbar"><span>ARCHITECTURE</span><span>C++ 구조</span></div><pre>AWeaponBase ─┬─ Knife · Pistol · AK · Sniper · Grenade
 UCombatComponent ── 플레이어 · AI 공용
 UHealthComponent ── ApplyDamage() / IsDead()
 DataTable ─┬─ DT_CharacterStats
@@ -465,7 +464,7 @@ cin &gt;&gt; choice;
 <div><b>▲ 다음엔</b><p>틀리면 끝나지 않고, <b>맞힐 때까지 계속 묻게</b> 만들고 싶다 → LV.02 반복문!</p></div></div></section><div class="endnav"><span class="btn" data-back>← 미니게임 선반으로</span><span class="btn p" data-post="for01">다음 글 · LV.02 인벤토리 검사 →</span></div></div></div></template><script>
 (function(){
   const q=id=>document.getElementById(id),md=q('md');
-  const POST={if01:{k:'BONUS · LV.01 · 포트폴리오',t:'갈림길 게임',m:'C++ · if / else · 콘솔 미니게임'},for01:{k:'BONUS · LV.02 · 포트폴리오',t:'인벤토리 검사',m:'C · for 문 + 배열 · 콘솔 미니게임'},pyr01:{k:'BONUS · LV.03 · 포트폴리오',t:'별 피라미드',m:'C · 이중 for 문 · 콘솔 미니게임'},ammo01:{k:'BONUS · LV.09 · 포트폴리오',t:'총알 재장전',m:'Unreal Blueprint · 변수 + 연산자 · 캐릭터 BP'}};
+  const POST={if01:{k:'BONUS · LV.01 · 포트폴리오',t:'갈림길 게임',m:'C++ · if / else · 콘솔 미니게임'},for01:{k:'BONUS · LV.02 · 포트폴리오',t:'인벤토리 검사',m:'C · for 문 + 배열 · 콘솔 미니게임'},pyr01:{k:'BONUS · LV.03 · 포트폴리오',t:'별 피라미드',m:'C · 이중 for 문 · 콘솔 미니게임'},lh01:{k:'BONUS · LV.04 · 포트폴리오',t:'미니 등대',m:'C · for 문 + scanf_s 입력 · 콘솔 미니게임'},ammo01:{k:'BONUS · LV.09 · 포트폴리오',t:'총알 재장전',m:'Unreal Blueprint · 변수 + 연산자 · 캐릭터 BP'}};
   function read(id){
     const p=POST[id];md.classList.add('reading');q('mk2').textContent=p.k;q('mt').textContent=p.t;q('mm').textContent=p.m;
     q('mbd').innerHTML=q('rd-'+id).innerHTML;q('ov').scrollTop=0;if(q('ov').classList.contains('abs')){const pg=q('pg');md.style.top=Math.max(10,Math.min(parseInt(md.style.top)||20,pg.scrollHeight-md.offsetHeight-20))+'px'}
@@ -486,7 +485,7 @@ cin &gt;&gt; choice;
   new MutationObserver(()=>{if(!q('ov').classList.contains('show'))md.classList.remove('reading')}).observe(q('ov'),{attributes:true});
   window.__read=read;
 })();</script>
-<template id="lib-tpl"><div class="rtop2"><span class="bk" data-back>← 선반으로</span><span class="crumb">BONUS / 미니게임 / <b>전체 목록</b></span><span class="tm">예시 목록 · 앞으로 만들 게임 포함</span></div><div class="l5"><div class="bar"><label class="srch">⌕ <input id="lq5" placeholder="게임 이름이나 문법으로 찾기 (예: 배열, UMG)"></label><div class="chips"><span class="chip on" data-f5="all">전체 13</span><span class="chip" data-f5="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>C++ 기초 8</span><span class="chip" data-f5="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>언리얼 5</span></div></div><div class="wrap5"><div class="lst"><div class="cnt" id="lc5">13개 중 13개</div><div class="grp" data-g="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>CHAPTER 1 · C++ 기초</div><div class="rw5 clear on" data-i="0" data-cat="cpp" data-q="갈림길 게임 if / else 01 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.01</b><span class="t">갈림길 게임</span><span class="g">if / else</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="1" data-cat="cpp" data-q="인벤토리 검사 for 문 반복문 배열 02 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.02</b><span class="t">인벤토리 검사</span><span class="g">for 문</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="2" data-cat="cpp" data-q="별 피라미드 이중 for 문 중첩 반복문 03 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.03</b><span class="t">별 피라미드</span><span class="g">이중 for 문</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 next" data-i="3" data-cat="cpp" data-q="가위바위보 함수 04 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.04</b><span class="t">가위바위보</span><span class="g">함수</span><span class="cg5">C++ 기초</span><em class="stt">▶ NEXT UP</em></div><div class="rw5 lock" data-i="4" data-cat="cpp" data-q="몬스터 도감 구조체 05 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.05</b><span class="t">몬스터 도감</span><span class="g">구조체</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="5" data-cat="cpp" data-q="보물 지도 포인터 06 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.06</b><span class="t">보물 지도</span><span class="g">포인터</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="6" data-cat="cpp" data-q="턴제 전투 클래스 07 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.07</b><span class="t">턴제 전투</span><span class="g">클래스</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="7" data-cat="cpp" data-q="직업 선택 상속 08 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.08</b><span class="t">직업 선택</span><span class="g">상속</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="grp" data-g="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>CHAPTER 2 · 언리얼</div><div class="rw5 clear" data-i="8" data-cat="ue" data-q="총알 재장전 변수 연산자 Blueprint 블루프린트 09 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.09</b><span class="t">총알 재장전</span><span class="g">변수 + 연산자</span><span class="cg5">언리얼</span><em class="stt">✓ CLEAR</em></div><div class="rw5 lock" data-i="9" data-cat="ue" data-q="문 열기 퍼즐 Blueprint 10 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.10</b><span class="t">문 열기 퍼즐</span><span class="g">Blueprint</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="10" data-cat="ue" data-q="코인 모으기 타이머 11 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.11</b><span class="t">코인 모으기</span><span class="g">타이머</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="11" data-cat="ue" data-q="체력바 만들기 UMG 12 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.12</b><span class="t">체력바 만들기</span><span class="g">UMG</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="12" data-cat="ue" data-q="스킬 쿨다운 GAS 13 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.13</b><span class="t">스킬 쿨다운</span><span class="g">GAS</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="empty" id="em5">찾는 게임이 없어요 ☁</div></div><div class="pv"><div class="cart5 next" id="c5" style="--a:#ffc8dd;--b:#dccbf7"><div class="lab"><small id="c5n">LV.01</small><b id="c5t">갈림길 게임</b><span id="c5g">if / else</span></div><em class="stt" id="c5s">✓ CLEAR</em><span class="cc" id="c5c">C++ 기초</span></div><dl><dt>한 줄</dt><dd id="c5d">숫자로 길을 고르는 모험</dd><dt>상태</dt><dd id="c5st">글을 읽을 수 있어요</dd></dl><span class="btn p" id="c5b" data-post="if01">포트폴리오 읽기 →</span><div class="keys" id="k5">마우스를 올려 구경하고, <b>클릭하면 고정</b>돼요</div></div></div></div></template><script>
+<template id="lib-tpl"><div class="rtop2"><span class="bk" data-back>← 선반으로</span><span class="crumb">BONUS / 미니게임 / <b>전체 목록</b></span><span class="tm">예시 목록 · 앞으로 만들 게임 포함</span></div><div class="l5"><div class="bar"><label class="srch">⌕ <input id="lq5" placeholder="게임 이름이나 문법으로 찾기 (예: 배열, UMG)"></label><div class="chips"><span class="chip on" data-f5="all">전체 13</span><span class="chip" data-f5="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>C++ 기초 8</span><span class="chip" data-f5="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>언리얼 5</span></div></div><div class="wrap5"><div class="lst"><div class="cnt" id="lc5">13개 중 13개</div><div class="grp" data-g="cpp" style="--a:#ffc8dd;--b:#dccbf7"><i></i>CHAPTER 1 · C++ 기초</div><div class="rw5 clear on" data-i="0" data-cat="cpp" data-q="갈림길 게임 if / else 01 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.01</b><span class="t">갈림길 게임</span><span class="g">if / else</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="1" data-cat="cpp" data-q="인벤토리 검사 for 문 반복문 배열 02 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.02</b><span class="t">인벤토리 검사</span><span class="g">for 문</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="2" data-cat="cpp" data-q="별 피라미드 이중 for 문 중첩 반복문 03 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.03</b><span class="t">별 피라미드</span><span class="g">이중 for 문</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 clear" data-i="3" data-cat="cpp" data-q="미니 등대 for 문 입력 scanf 04 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.04</b><span class="t">미니 등대</span><span class="g">for 문 + 입력</span><span class="cg5">C++ 기초</span><em class="stt">✓ CLEAR</em></div><div class="rw5 next" data-i="4" data-cat="cpp" data-q="몬스터 도감 구조체 05 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.05</b><span class="t">몬스터 도감</span><span class="g">구조체</span><span class="cg5">C++ 기초</span><em class="stt">▶ NEXT UP</em></div><div class="rw5 lock" data-i="5" data-cat="cpp" data-q="보물 지도 포인터 06 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.06</b><span class="t">보물 지도</span><span class="g">포인터</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="6" data-cat="cpp" data-q="턴제 전투 클래스 07 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.07</b><span class="t">턴제 전투</span><span class="g">클래스</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="7" data-cat="cpp" data-q="직업 선택 상속 08 C++ 기초" style="--a:#ffc8dd;--b:#dccbf7"><b>LV.08</b><span class="t">직업 선택</span><span class="g">상속</span><span class="cg5">C++ 기초</span><em class="stt">■ LOCKED</em></div><div class="grp" data-g="ue" style="--a:#bfe3ff;--b:#c6efda"><i></i>CHAPTER 2 · 언리얼</div><div class="rw5 clear" data-i="8" data-cat="ue" data-q="총알 재장전 변수 연산자 Blueprint 블루프린트 09 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.09</b><span class="t">총알 재장전</span><span class="g">변수 + 연산자</span><span class="cg5">언리얼</span><em class="stt">✓ CLEAR</em></div><div class="rw5 lock" data-i="9" data-cat="ue" data-q="문 열기 퍼즐 Blueprint 10 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.10</b><span class="t">문 열기 퍼즐</span><span class="g">Blueprint</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="10" data-cat="ue" data-q="코인 모으기 타이머 11 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.11</b><span class="t">코인 모으기</span><span class="g">타이머</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="11" data-cat="ue" data-q="체력바 만들기 UMG 12 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.12</b><span class="t">체력바 만들기</span><span class="g">UMG</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="rw5 lock" data-i="12" data-cat="ue" data-q="스킬 쿨다운 GAS 13 언리얼" style="--a:#bfe3ff;--b:#c6efda"><b>LV.13</b><span class="t">스킬 쿨다운</span><span class="g">GAS</span><span class="cg5">언리얼</span><em class="stt">■ LOCKED</em></div><div class="empty" id="em5">찾는 게임이 없어요 ☁</div></div><div class="pv"><div class="cart5 next" id="c5" style="--a:#ffc8dd;--b:#dccbf7"><div class="lab"><small id="c5n">LV.01</small><b id="c5t">갈림길 게임</b><span id="c5g">if / else</span></div><em class="stt" id="c5s">✓ CLEAR</em><span class="cc" id="c5c">C++ 기초</span></div><dl><dt>한 줄</dt><dd id="c5d">숫자로 길을 고르는 모험</dd><dt>상태</dt><dd id="c5st">글을 읽을 수 있어요</dd></dl><span class="btn p" id="c5b" data-post="if01">포트폴리오 읽기 →</span><div class="keys" id="k5">마우스를 올려 구경하고, <b>클릭하면 고정</b>돼요</div></div></div></div></template><script>
 (function(){
   const q=id=>document.getElementById(id),md=q('md');
   document.addEventListener('click',e=>{
@@ -497,7 +496,7 @@ cin &gt;&gt; choice;
     if(e.target.closest('[data-post]')||e.target.closest('[data-back]'))md.classList.remove('lib');
   });
   
-  const D5=[{"n": "01", "t": "갈림길 게임", "g": "if / else", "c": "cpp", "cn": "C++ 기초", "d": "숫자로 길을 고르는 모험", "s": "clear", "p": "if01"}, {"n": "02", "t": "인벤토리 검사", "g": "for 문", "c": "cpp", "cn": "C++ 기초", "d": "빈 칸을 하나씩 찾아내기", "s": "clear", "p": "for01"}, {"n": "03", "t": "별 피라미드", "g": "이중 for 문", "c": "cpp", "cn": "C++ 기초", "d": "for 안에 for로 별 계단 쌓기", "s": "clear", "p": "pyr01"}, {"n": "04", "t": "가위바위보", "g": "함수", "c": "cpp", "cn": "C++ 기초", "d": "판정 함수로 승부 내기", "s": "next"}, {"n": "05", "t": "몬스터 도감", "g": "구조체", "c": "cpp", "cn": "C++ 기초", "d": "몬스터 정보 한 묶음", "s": "lock"}, {"n": "06", "t": "보물 지도", "g": "포인터", "c": "cpp", "cn": "C++ 기초", "d": "주소를 따라가는 지도", "s": "lock"}, {"n": "07", "t": "턴제 전투", "g": "클래스", "c": "cpp", "cn": "C++ 기초", "d": "용사 vs 슬라임", "s": "lock"}, {"n": "08", "t": "직업 선택", "g": "상속", "c": "cpp", "cn": "C++ 기초", "d": "전사 · 마법사 · 궁수", "s": "lock"}, {"n": "09", "t": "총알 재장전", "g": "변수 + 연산자", "c": "ue", "cn": "언리얼", "d": "쏘면 줄고, R키로 꽉 채우기", "s": "clear", "p": "ammo01"}, {"n": "10", "t": "문 열기 퍼즐", "g": "Blueprint", "c": "ue", "cn": "언리얼", "d": "스위치를 밟으면 열리는 문", "s": "lock"}, {"n": "11", "t": "코인 모으기", "g": "타이머", "c": "ue", "cn": "언리얼", "d": "제한 시간 안에 다 모으기", "s": "lock"}, {"n": "12", "t": "체력바 만들기", "g": "UMG", "c": "ue", "cn": "언리얼", "d": "맞으면 줄어드는 하트", "s": "lock"}, {"n": "13", "t": "스킬 쿨다운", "g": "GAS", "c": "ue", "cn": "언리얼", "d": "쓰면 기다려야 하는 스킬", "s": "lock"}],C5={"cpp": ["#ffc8dd", "#dccbf7"], "ue": ["#bfe3ff", "#c6efda"]};
+  const D5=[{"n": "01", "t": "갈림길 게임", "g": "if / else", "c": "cpp", "cn": "C++ 기초", "d": "숫자로 길을 고르는 모험", "s": "clear", "p": "if01"}, {"n": "02", "t": "인벤토리 검사", "g": "for 문", "c": "cpp", "cn": "C++ 기초", "d": "빈 칸을 하나씩 찾아내기", "s": "clear", "p": "for01"}, {"n": "03", "t": "별 피라미드", "g": "이중 for 문", "c": "cpp", "cn": "C++ 기초", "d": "for 안에 for로 별 계단 쌓기", "s": "clear", "p": "pyr01"}, {"n": "04", "t": "미니 등대", "g": "for 문 + 입력", "c": "cpp", "cn": "C++ 기초", "d": "높이를 입력하면 바다 위에 등대가", "s": "clear", "p": "lh01"}, {"n": "05", "t": "몬스터 도감", "g": "구조체", "c": "cpp", "cn": "C++ 기초", "d": "몬스터 정보 한 묶음", "s": "next"}, {"n": "06", "t": "보물 지도", "g": "포인터", "c": "cpp", "cn": "C++ 기초", "d": "주소를 따라가는 지도", "s": "lock"}, {"n": "07", "t": "턴제 전투", "g": "클래스", "c": "cpp", "cn": "C++ 기초", "d": "용사 vs 슬라임", "s": "lock"}, {"n": "08", "t": "직업 선택", "g": "상속", "c": "cpp", "cn": "C++ 기초", "d": "전사 · 마법사 · 궁수", "s": "lock"}, {"n": "09", "t": "총알 재장전", "g": "변수 + 연산자", "c": "ue", "cn": "언리얼", "d": "쏘면 줄고, R키로 꽉 채우기", "s": "clear", "p": "ammo01"}, {"n": "10", "t": "문 열기 퍼즐", "g": "Blueprint", "c": "ue", "cn": "언리얼", "d": "스위치를 밟으면 열리는 문", "s": "lock"}, {"n": "11", "t": "코인 모으기", "g": "타이머", "c": "ue", "cn": "언리얼", "d": "제한 시간 안에 다 모으기", "s": "lock"}, {"n": "12", "t": "체력바 만들기", "g": "UMG", "c": "ue", "cn": "언리얼", "d": "맞으면 줄어드는 하트", "s": "lock"}, {"n": "13", "t": "스킬 쿨다운", "g": "GAS", "c": "ue", "cn": "언리얼", "d": "쓰면 기다려야 하는 스킬", "s": "lock"}],C5={"cpp": ["#ffc8dd", "#dccbf7"], "ue": ["#bfe3ff", "#c6efda"]};
   let PIN=null;window.__pin=()=>PIN;
   function pinMark(){document.querySelectorAll('.l5 .rw5').forEach(r=>r.classList.toggle('pin',PIN!==null&&r.dataset.i==PIN));const c=document.getElementById('c5');if(c)c.classList.toggle('pinned',PIN!==null);const k=document.getElementById('k5');if(k)k.innerHTML=PIN!==null?'📌 <b>LV.'+D5[PIN].n+'</b> 고정됨 · 다시 누르면 풀려요':'마우스를 올려 구경하고, <b>클릭하면 고정</b>돼요'}
   function p5(i){const d=D5[i];document.querySelectorAll('.l5 .rw5').forEach(r=>r.classList.toggle('on',r.dataset.i==i));
@@ -1257,7 +1256,7 @@ body.lock{overflow:hidden}
 <p class="cap">✎ 회고는 초안이에요 — 내 느낌대로 고쳐 쓰기</p>
 </section>
 
-<div class="endnav"><span class="btn" data-post="for01">← LV.02 인벤토리 검사</span><span class="nx">다음 글 · LV.04 가위바위보 <em>■ LOCKED</em></span></div>
+<div class="endnav"><span class="btn" data-post="for01">← LV.02 인벤토리 검사</span><span class="btn p" data-post="lh01">다음 글 · LV.04 미니 등대 →</span></div>
 </div></div></template>
 <style>
 /* ===== LV.03 별 피라미드 (이중 for) ===== */
@@ -1539,6 +1538,394 @@ body.lock{overflow:hidden}
 
   const mbd=document.getElementById('mbd');
   new MutationObserver(()=>{const r=mbd.querySelector('[data-anim="pyr01"]');stop();if(r){tabs(r);grid(r);clock(r);stair(r);sim(r);play(r);bugs(r);quiz(r)}}).observe(mbd,{childList:true});
+})();
+</script>
+
+<template id="rd-lh01"><div class="rtop2"><span class="bk" data-back>← 미니게임</span><span class="crumb">BONUS / 미니게임 / <b>LV.04 미니 등대</b></span><span class="tm">읽는 데 8분 · 눌러 보는 글</span></div>
+<div class="r1"><aside><h5>Contents</h5><div class="sm">9 CHAPTERS</div><ol class="toc">
+<li data-to="h1"><small>CHAPTER 1</small>한눈에 보기</li>
+<li data-to="h2"><small>STEP 1</small>바다 만들기</li>
+<li data-to="h3"><small>STEP 2</small>등대 몸통</li>
+<li data-to="h4"><small>STEP 3</small>꼭대기층</li>
+<li data-to="h5"><small>CHAPTER 5</small>조립 · 순서의 비밀</li>
+<li data-to="h6"><small>STEP 4</small>높이 입력 받기</li>
+<li data-to="h7"><small>CHAPTER 7</small>한 글자씩 실행</li>
+<li data-to="h8"><small>CHAPTER 8</small>확인 퀴즈</li>
+<li data-to="h9"><small>CHAPTER 9</small>회고 · 다음 레벨</li>
+</ol><div class="prog"><i></i></div></aside>
+<div class="rsc" data-anim="lh01">
+
+<section class="rsx" id="h1"><div class="rh"><span class="rn">01</span><span class="rk">OVERVIEW</span><h3>한눈에 보기</h3></div>
+<p class="lead">별(<code>*</code>)과 물결(<code>~</code>)로 <b>바다 위에 서 있는 등대</b>를 그렸어요. 높이는 <b>키보드로 입력</b>받아서 마음대로 바꿀 수 있어요.</p>
+<div class="facts"><div><small>언어</small>C / C++</div><div><small>화면</small>콘솔</div><div><small>배운 문법</small>for 문 + scanf_s</div><div><small>부품</small>꼭대기 · 몸통 · 바다</div></div>
+<div class="lh-hero">
+<div class="con"><div class="ct"><i></i><i></i><i></i><span>Lighthouse.exe · 높이 5</span></div><div class="lh-out" id="lhHero"></div></div>
+<div class="lh-parts" id="lhParts">
+<div class="lh-pt t" data-part="t"><em>③</em><b>꼭대기층</b><small>공백 4 → 3 → 2 · 별 1 → 3 → 5</small></div>
+<div class="lh-pt b" data-part="b"><em>②</em><b>등대 몸통</b><small>공백 3 + 별 3 · 높이만큼 반복</small></div>
+<div class="lh-pt s" data-part="s"><em>①</em><b>바다</b><small>물결 ~ 10개</small></div>
+<p class="mu">부품에 <b>마우스를 올리면</b> 등대에서 그 부분이 반짝여요. 동그라미 숫자 = <b>만든 순서</b></p>
+</div>
+</div>
+<div class="call">🔢 <b>재밌는 점</b> — 만든 순서는 <b>① 바다 → ② 몸통 → ③ 꼭대기</b>(아래부터)인데, 코드는 <b>③ → ② → ①</b>(위부터) 순서로 적혀 있어요. 왜 그런지는 5장에서 직접 눌러 보며 알아봐요!</div>
+</section>
+
+<section class="rsx" id="h2"><div class="rh"><span class="rn">02</span><span class="rk">STEP 1</span><h3>바다 만들기</h3></div>
+<p>가장 쉬운 부품부터! <b>for 문 하나</b>로 물결 <code>~</code>을 10번 찍고, 마지막에 줄바꿈 1번.</p>
+<pre class="code"><span class="c">// 1. 바다 만들기</span>
+<b>for</b> (<b>int</b> i = 0; i &lt; 10; i++)   <span class="c">// i = 0, 1, 2 … 9 → 10번</span>
+{
+	printf_s("~");
+}
+printf_s("\n");</pre>
+<div class="lh-box">
+<div class="lh-sea" id="lhSea"></div>
+<div class="lh-seac"><div class="py-v vi"><small>i</small><b id="lhSi">-</b></div><div class="py-cond" id="lhSc">버튼을 눌러 보세요</div></div>
+<div class="py-ctl"><button class="btn p" data-sea="play">🌊 한 바퀴씩 찍기</button><label class="lh-sl">바다 길이 <code>i &lt; <b id="lhSnv">10</b></code><input type="range" min="1" max="20" value="10" id="lhSn"></label></div>
+</div>
+<div class="call">💡 <b>0부터 시작해서 &lt; 10</b> → i가 0, 1, 2 … 9로 <b>딱 10번</b>. “1부터 10까지(<code>i = 1; i &lt;= 10</code>)”와 횟수는 같아요. 손가락을 0번부터 세는 셈이에요.</div>
+</section>
+
+<section class="rsx" id="h3"><div class="rh"><span class="rn">03</span><span class="rk">STEP 2</span><h3>등대 몸통</h3></div>
+<p>몸통 한 층 = <b>공백 3칸 + 별 3개 + 줄바꿈</b>. 이걸 <b>5번</b> 반복해요. 아직 입력은 안 받으니까 일단 숫자 <code>5</code>로 고정했어요.</p>
+<pre class="code"><span class="c">// 2. 등대 만들기 (처음 버전)</span>
+<b>for</b> (<b>int</b> i = 0; i &lt; <mark>5</mark>; i++)        <span class="c">// 몸통 5층</span>
+{
+	<b>for</b> (<b>int</b> j = 0; j &lt; 3; j++)    <span class="c">// ① 공백 3칸</span>
+		printf_s(" ");
+	<b>for</b> (<b>int</b> j = 0; j &lt; 3; j++)    <span class="c">// ② 별 3개</span>
+		printf_s("*");
+	printf_s("\n");                 <span class="c">// ③ 다음 층으로</span>
+}</pre>
+<div class="lh-anat"><div class="lh-cells"><i class="sp">␣</i><i class="sp">␣</i><i class="sp">␣</i><i class="st">*</i><i class="st">*</i><i class="st">*</i><i class="nl">↵</i></div>
+<div class="lh-lbl"><span style="flex:3">① 공백 for · j = 0, 1, 2</span><span style="flex:3">② 별 for · j = 0, 1, 2</span><span style="flex:1">③</span></div></div>
+<div class="lh-box">
+<div class="lh-opts"><label class="py-opt"><span>층 수</span><input type="range" min="1" max="8" value="5" id="lhBn"><code>i &lt; <b id="lhBnv">5</b></code></label>
+<div class="py-opt"><span>공백 for</span><div class="py-seg" data-g="bsp"><button class="on" data-v="3">있음 (3칸)</button><button data-v="0">❌ 빼 보기</button><button data-v="6">6칸</button></div></div>
+<label class="lh-chk"><input type="checkbox" id="lhBdot" checked> 공백을 <b>·</b> 으로 보기</label></div>
+<div class="lh-two"><div class="con"><div class="ct"><i></i><i></i><i></i><span>몸통 + 바다</span></div><div class="lh-out" id="lhBody"></div></div><div class="call" id="lhBtip"></div></div>
+</div>
+<div class="call">🧱 비유하면 — 벽돌 쌓기예요. 매 층마다 <b>빈 땅 3칸</b>을 비워 두고(공백), <b>벽돌 3개</b>를 놓고(별), 한 층 위로! 빈 땅이 없으면 등대가 바다 <b>왼쪽 끝</b>에 붙어 버려요.</div>
+</section>
+
+<section class="rsx" id="h4"><div class="rh"><span class="rn">04</span><span class="rk">STEP 3</span><h3>꼭대기층</h3></div>
+<p>꼭대기는 <b>세모 모양</b>이라 줄마다 공백과 별 개수가 달라요. 그래서 숫자 대신 <b>i로 계산</b>해요.</p>
+<pre class="code"><span class="c">// 3. 꼭대기층</span>
+<b>for</b> (<b>int</b> i = 0; i &lt; 3; i++)
+{
+	<b>for</b> (<b>int</b> j = 0; j &lt; <mark>4 - i</mark>; j++)       <span class="c">// 공백 4 → 3 → 2</span>
+		printf_s(" ");
+	<b>for</b> (<b>int</b> j = 0; j &lt; <mark>2 * i + 1</mark>; j++)   <span class="c">// 별 1 → 3 → 5</span>
+		printf_s("*");
+	printf_s("\n");
+}</pre>
+<div class="lh-top">
+<table class="py-tbl lh-tt"><thead><tr><th>i</th><th>공백 = 4 − i</th><th>별 = 2 × i + 1</th></tr></thead><tbody>
+<tr data-r="0"><td>0</td><td>4 − 0 = <b>4</b></td><td>2 × 0 + 1 = <b>1</b></td></tr>
+<tr data-r="1"><td>1</td><td>4 − 1 = <b>3</b></td><td>2 × 1 + 1 = <b>3</b></td></tr>
+<tr data-r="2"><td>2</td><td>4 − 2 = <b>2</b></td><td>2 × 2 + 1 = <b>5</b></td></tr>
+</tbody></table>
+<div class="con"><div class="ct"><i></i><i></i><i></i><span>칸 번호로 보기</span></div><div class="lh-out" id="lhTop"></div></div>
+</div>
+<div class="lh-say" id="lhTsay">표의 줄을 <b>눌러</b> 보세요 👆 — 그 줄이 등대 어디인지 보여 줘요</div>
+<div class="call">📐 <b>왜 이 계산이에요?</b> — 한 줄 내려갈 때마다 <b>공백은 1개 줄고</b>(왼쪽으로 1칸 넓어짐), <b>별은 2개 늘어요</b>(왼쪽 1 + 오른쪽 1). 양쪽으로 똑같이 넓어지니까 <b>가운데(4번 칸)</b>가 항상 맞아요. 몸통 별 3개(3·4·5번 칸)의 가운데도 4번 칸이라 딱 붙어요!</div>
+</section>
+
+<section class="rsx" id="h5"><div class="rh"><span class="rn">05</span><span class="rk">ASSEMBLE</span><h3>조립 · 순서의 비밀</h3></div>
+<p>콘솔은 <b>프린터</b>처럼 <b>위에서 아래로만</b> 써요. 한 번 지나간 줄로는 다시 못 올라가요. 그래서 <b>화면 맨 위에 올 것을 코드 맨 위에</b> 써야 해요. 순서를 바꿔 보세요!</p>
+<div class="py-tabb" id="lhOrd"><button class="on" data-o="tbs">✅ ③ → ② → ① (내 코드)</button><button data-o="sbt">① → ② → ③ (만든 순서 그대로)</button><button data-o="bts">② → ③ → ①</button><button data-o="tsb">③ → ① → ②</button></div>
+<div class="lh-asm">
+<div class="lh-stack" id="lhStack"></div>
+<div class="lh-arrow">⟶<small>실행</small></div>
+<div class="con"><div class="ct"><i></i><i></i><i></i><span>결과</span></div><div class="lh-out" id="lhAsm"></div></div>
+</div>
+<div class="lh-say" id="lhAsay"></div>
+</section>
+
+<section class="rsx" id="h6"><div class="rh"><span class="rn">06</span><span class="rk">STEP 4</span><h3>높이 입력 받기</h3></div>
+<p>마지막으로 몸통 높이를 <b>고정된 5</b> 대신 <b>키보드로 입력받은 값</b>으로 바꿨어요. 버튼으로 전/후를 비교해 보세요.</p>
+<div class="py-tabs" data-tabs>
+<div class="py-tabb"><button class="on" data-t="0">BEFORE · i &lt; 5</button><button data-t="1">AFTER · 입력 받기</button></div>
+<div class="py-tabv lh-tabv">
+<div class="py-pane on"><pre class="code"><span class="c">// (입력 없음)</span>
+
+<span class="c">// 3. 꼭대기층 … 그대로</span>
+
+<span class="c">// 2. 등대 만들기</span>
+<b>for</b> (<b>int</b> i = 0; i &lt; <span class="bad">5</span>; i++)     <span class="c">// 언제나 5층</span>
+{ … }
+
+<span class="c">// 1. 바다 만들기 … 그대로</span></pre><p class="cap">↑ 몸통은 항상 5층. 더 높은 등대를 원하면 <b>코드를 고쳐서 다시 실행</b>해야 해요.</p></div>
+<div class="py-pane"><pre class="code"><span class="good">int height;</span>                                  <span class="c">// ① 숫자 담을 상자</span>
+<span class="good">printf_s("등대의 높이를 입력하세요 : ");</span>     <span class="c">// ② 질문 출력</span>
+<span class="good">scanf_s("%d", &amp;height);</span>                     <span class="c">// ③ 입력 → 상자에 저장</span>
+
+<span class="c">// 3. 꼭대기층 … 그대로</span>
+
+<span class="c">// 2. 등대 만들기</span>
+<b>for</b> (<b>int</b> i = 0; i &lt; <span class="good">height</span>; i++)  <span class="c">// ④ 입력한 만큼</span>
+{ … }
+
+<span class="c">// 1. 바다 만들기 … 그대로</span></pre><p class="cap">↑ 바뀐 곳은 초록색 <b>딱 4군데</b>. 나머지 코드는 하나도 안 바뀌었어요.</p></div>
+</div></div>
+<div class="fx-pipe lh-flow"><span style="--d:0s">📦 int height</span><i></i><span style="--d:.6s">💬 질문 출력</span><i></i><span style="--d:1.2s">⌨️ 입력 기다림</span><i></i><span style="--d:1.8s">💾 height에 저장</span><i></i><span style="--d:2.4s">🔁 i &lt; height</span></div>
+<h4 class="am-sub">⌨️ 직접 입력해 보기</h4>
+<div class="lh-try">
+<div class="con"><div class="ct"><i></i><i></i><i></i><span>Lighthouse.exe</span></div><div class="lh-ask" id="lhAsk">등대의 높이를 입력하세요 : <input type="number" min="1" max="15" value="" placeholder="?" id="lhIn"><button class="lh-ent" id="lhEnt">Enter ⏎</button></div><div class="lh-out" id="lhTry"></div></div>
+<div class="lh-tryr"><div class="lh-boxv"><small>📦 height 상자</small><b id="lhHv">?</b></div><div class="lh-quick"><span class="mu">빠른 입력</span><button data-h="1">1</button><button data-h="3">3</button><button data-h="7">7</button><button data-h="12">12</button></div><div class="call" style="font-size:12.5px;line-height:20px">📮 <b>&amp;height 의 &amp;</b> = 상자의 <b>주소</b>. scanf_s에게 “이 주소의 상자에 넣어 줘!” 하고 알려 주는 거예요. 택배를 받으려면 주소가 필요하듯이요.</div></div>
+</div>
+</section>
+
+<section class="rsx" id="h7"><div class="rh"><span class="rn">07</span><span class="rk">TRACE</span><h3>한 글자씩 실행</h3></div>
+<p>완성된 코드를 컴퓨터처럼 <b>한 글자씩</b> 따라가요. 지금 실행 중인 부품은 <b>색으로</b>, 지금 줄은 <b>분홍색</b>으로 보여요. <b>⏩ 부품 끝까지</b>로 한 부품을 한 번에 건너뛸 수도 있어요.</p>
+<div class="py-sim lh-sim">
+<div class="py-simh"><span>LIGHTHOUSE DEBUGGER · 입력값 <span class="py-seg lh-hs" data-g="dh"><button data-v="3">3</button><button class="on" data-v="5">5</button><button data-v="7">7</button></span></span><span id="lhStepN">0 / 0</span></div>
+<div class="lh-simb">
+<pre class="code py-code lh-code" id="lhCode"></pre>
+<div class="lh-simr">
+<div class="lh-vars"><div class="lh-part" id="lhPart">준비</div><div class="py-v vi"><small>i</small><b id="lhVi">-</b></div><div class="py-v vj"><small>j</small><b id="lhVj">-</b></div><div class="py-cond" id="lhCond">-</div></div>
+<div class="con"><div class="ct"><i></i><i></i><i></i><span>콘솔 출력</span><label class="lh-chk dk"><input type="checkbox" id="lhDdot" checked> 공백 ·</label></div><div class="lh-q" id="lhDq"></div><div class="lh-out" id="lhDout"></div></div>
+</div>
+</div>
+<div class="py-say" id="lhSay">▶ 다음 버튼을 눌러 시작해요</div>
+<div class="py-ctl"><button class="btn" data-ds="reset">↺</button><button class="btn" data-ds="prev">◀</button><button class="btn p" data-ds="next">다음 ▶</button><button class="btn" data-ds="play" id="lhPlay">⏵ 자동</button><button class="btn" data-ds="line">⏭ 다음 줄</button><button class="btn" data-ds="part">⏩ 부품 끝까지</button><input type="range" id="lhRange" min="0" max="0" value="0" aria-label="실행 단계"></div>
+</div>
+<p class="cap">↑ 공백도 <b>한 번의 printf_s(" ")</b>예요. 눈에 안 보일 뿐, 컴퓨터는 똑같이 한 칸씩 찍어요.</p>
+</section>
+
+<section class="rsx" id="h8"><div class="rh"><span class="rn">08</span><span class="rk">QUIZ</span><h3>확인 퀴즈</h3></div>
+<p>정답을 누르면 이유도 알려 줘요. 헷갈리면 위의 버튼들로 직접 확인해 봐도 좋아요!</p>
+<div class="py-quiz" id="lhQuiz"></div>
+<div class="py-qs" id="lhQs">0 / 5 정답</div>
+</section>
+
+<section class="rsx" id="h9"><div class="rh"><span class="rn">09</span><span class="rk">NEXT</span><h3>회고 · 다음 레벨</h3></div>
+<div class="retro"><div><b>★ 잘한 점</b><p>큰 그림을 <b>바다 · 몸통 · 꼭대기</b> 부품으로 나눠서 하나씩 만들었다. 처음엔 <code>i &lt; 5</code>로 모양부터 맞추고, 마지막에 <b>scanf_s</b>로 입력을 붙여서 고칠 곳이 딱 한 군데였다.</p></div><div><b>▲ 다음엔</b><p>꼭대기 크기와 바다 길이도 <b>입력값에 맞춰</b> 바뀌게 하고 싶다. 0이나 음수를 입력하면 <b>“다시 입력하세요”</b>라고 묻게도 해 보기!</p></div></div>
+<p class="cap">✎ 회고는 초안이에요 — 내 느낌대로 고쳐 쓰기</p>
+</section>
+
+<div class="endnav"><span class="btn" data-post="pyr01">← LV.03 별 피라미드</span><span class="nx">다음 글 · LV.05 몬스터 도감 <em>■ LOCKED</em></span></div>
+</div></div></template>
+<style>
+/* ===== LV.04 미니 등대 ===== */
+.carts{grid-template-columns:repeat(5,1fr);gap:10px}.carts .cart b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lh-out{padding:12px 16px;font-family:"IBM Plex Mono";min-height:60px}
+.lh-row{display:flex;height:19px}
+.lh-c{width:15px;height:19px;display:inline-flex;align-items:center;justify-content:center;font-size:13.5px;color:#f1eafe;border-radius:3px;transition:background .15s,opacity .2s}
+.lh-c.sp{color:#6b5f8f}.lh-out.nodot .lh-c.sp{color:transparent}
+.lh-c.t{color:#ffe680}.lh-c.b{color:#e2d4ff}.lh-c.s{color:#8fd3ff}
+.lh-out.dim .lh-c:not(.on){opacity:.25}
+.lh-c.on{background:rgba(255,200,221,.28)}
+.lh-c.cur{background:#e07aa3;color:#fff!important}
+.lh-c.cur.sp{color:#fff!important}
+.lh-c.nw{animation:pyDrop .3s}
+.lh-num .lh-row:first-child .lh-c{color:#cfc3ee;font-size:10px;opacity:1!important;background:rgba(255,255,255,.06)}
+.lh-hero{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.lh-hero .lh-out{min-height:230px}
+.lh-parts{display:flex;flex-direction:column;gap:6px}
+.lh-pt{border:1.4px solid var(--ink);border-radius:14px;padding:8px 12px 8px 44px;position:relative;cursor:pointer;transition:transform .15s}
+.lh-pt:hover,.lh-pt.on{transform:translateX(4px);box-shadow:-4px 0 0 var(--ink)}
+.lh-pt.t{background:#fff0b3}.lh-pt.b{background:#dccbf7}.lh-pt.s{background:#bfe3ff}
+.lh-pt em{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-style:normal;font-size:20px}
+.lh-pt b{display:block;font-family:"Gowun Batang";font-size:14.5px}
+.lh-pt small{font-size:11.5px;color:var(--muted)}
+.lh-parts .mu{font-size:12px!important;line-height:18px!important;margin:2px 0 0}
+.lh-box{background:#fff;border:1.4px solid var(--ink);border-radius:18px;overflow:hidden;margin:10px 0}
+.lh-sea{background:#2f2745;padding:16px;display:flex;flex-wrap:wrap;gap:2px;min-height:60px;align-items:center}
+.lh-sea span{display:inline-flex;flex-direction:column;align-items:center;font-family:"IBM Plex Mono";color:#8fd3ff;font-size:18px;width:26px;animation:pyDrop .3s}
+.lh-sea span small{font-size:9px;color:#8a7cae}
+.lh-sea span.cur{color:#fff;text-shadow:0 0 8px #8fd3ff}
+.lh-sea .nlb{color:#ffc8dd;font-size:14px}
+.lh-seac{display:flex;gap:8px;align-items:center;padding:10px 12px 0}
+.lh-seac .py-v{width:110px}.lh-seac .py-cond{flex:1}
+.lh-sl{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);flex:1;justify-content:flex-end}
+.lh-sl input,.lh-opts input[type=range]{accent-color:#e07aa3;width:160px}
+.lh-anat{margin:10px 0;background:#fff;border:1.4px solid var(--ink);border-radius:16px;padding:12px 14px}
+.lh-cells{display:flex;gap:4px}
+.lh-cells i,.lh-lbl span{font-style:normal}
+.lh-cells i{flex:1;height:38px;border:1.4px solid var(--ink);border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono";font-size:16px}
+.lh-cells .sp{background:#faf6fd;color:#c8b6de;border-style:dashed}.lh-cells .st{background:#dccbf7}.lh-cells .nl{background:#c6efda}
+.lh-lbl{display:flex;gap:4px;margin-top:6px;font-size:11.5px;color:var(--muted);text-align:center}
+.lh-lbl span{border-top:2px solid #d9cbe8;padding-top:3px}
+.lh-opts{display:grid;gap:8px;padding:12px 14px;border-bottom:1.4px dashed #d9cbe8}
+.lh-opts .py-opt code{font-size:12px}
+.lh-chk{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer}
+.lh-chk.dk{margin-left:auto;color:#cfc3ee;font-size:10.5px}
+.lh-two{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px;align-items:start}
+.lh-two .call{margin:0}
+.lh-top{display:grid;grid-template-columns:1.1fr 1fr;gap:10px;margin:10px 0}
+.lh-tt tbody tr{cursor:pointer}
+.lh-tt tbody tr.on td{background:#ffc8dd}
+.lh-say{text-align:center;font-size:13.5px;background:#f7f0fb;border-radius:999px;padding:7px 12px;margin-bottom:10px;min-height:22px}
+.lh-say.pop{animation:fxHit .4s}
+.lh-asm{display:grid;grid-template-columns:200px 50px 1fr;gap:8px;align-items:center;margin-bottom:10px}
+.lh-stack{display:flex;flex-direction:column;gap:6px}
+.lh-stack div{border:1.4px solid var(--ink);border-radius:12px;padding:8px 10px;font-size:12.5px;animation:fxIn .3s}
+.lh-stack div small{display:block;font-family:"IBM Plex Mono";font-size:9.5px;color:var(--muted)}
+.lh-stack .t{background:#fff0b3}.lh-stack .b{background:#dccbf7}.lh-stack .s{background:#bfe3ff}
+.lh-arrow{text-align:center;font-size:22px;color:var(--ink)}.lh-arrow small{display:block;font-size:10px;color:var(--muted)}
+.lh-asm .lh-out{min-height:210px}
+.lh-tabv{padding:0;min-height:0;overflow:hidden}
+.lh-tabv .code{margin:0;border-radius:0}
+.lh-tabv .cap{padding:6px 14px 10px}
+.lh-flow{margin:12px 0}
+.lh-try{display:grid;grid-template-columns:1.2fr 1fr;gap:10px}
+.lh-ask{padding:12px 16px 0;font-family:"IBM Plex Mono";font-size:12.5px;color:#f1eafe;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.lh-ask input{width:54px;background:#3d3456;border:1.4px solid #8a7cae;border-radius:6px;color:#fff0b3;font:inherit;padding:2px 6px}
+.lh-ask input:focus{outline:2px solid #e07aa3}
+.lh-ent{font:inherit;font-size:11px;background:#e07aa3;color:#fff;border:0;border-radius:6px;padding:3px 9px;cursor:pointer}
+.lh-ask.done input{border-color:#4fb893}
+.lh-try .lh-out{min-height:200px;max-height:340px;overflow:auto}
+.lh-tryr{display:flex;flex-direction:column;gap:8px}
+.lh-boxv{border:2px solid var(--ink);border-radius:14px;background:#fff0b3;padding:8px 14px;display:flex;align-items:center;justify-content:space-between}
+.lh-boxv small{font-size:12px}.lh-boxv b{font-family:"IBM Plex Mono";font-size:30px;font-weight:500}
+.lh-boxv b.bump{animation:fxBump .45s}
+.lh-quick{display:flex;align-items:center;gap:5px}
+.lh-quick button{font:inherit;font-family:"IBM Plex Mono";font-size:12px;border:1.4px solid var(--ink);border-radius:8px;background:#fff;padding:3px 10px;cursor:pointer;color:var(--ink)}
+.lh-quick button:hover{background:#fff0b3}
+.lh-hs{display:inline-flex;margin-left:6px;vertical-align:middle}
+.lh-hs button{padding:0 8px;font-size:11px}
+.lh-simb{display:grid;grid-template-columns:1.15fr 1fr;gap:10px;padding:12px}
+.lh-code{font-size:11.5px!important;line-height:19px!important;max-height:470px;position:relative}
+.lh-code .ln{min-height:19px}
+.lh-code .ln.sec-t{background:rgba(255,240,179,.13)}.lh-code .ln.sec-b{background:rgba(220,203,247,.16)}.lh-code .ln.sec-s{background:rgba(191,227,255,.15)}.lh-code .ln.sec-in{background:rgba(198,239,218,.14)}
+.lh-code .ln.hot{background:rgba(224,122,163,.55)!important;box-shadow:-6px 0 0 #ffc8dd}
+.lh-simr{display:flex;flex-direction:column;gap:8px}
+.lh-vars{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.lh-part{grid-column:1/-1;text-align:center;font-family:"Gowun Batang";font-size:15px;border:1.4px solid var(--ink);border-radius:12px;padding:5px;background:#f7f0fb;transition:background .3s}
+.lh-part.t{background:#fff0b3}.lh-part.b{background:#dccbf7}.lh-part.s{background:#bfe3ff}.lh-part.in{background:#c6efda}
+.lh-vars .py-cond{grid-column:1/-1}
+.lh-simr .ct{display:flex;align-items:center}
+.lh-q{padding:10px 16px 0;font-family:"IBM Plex Mono";font-size:11.5px;color:#f1eafe;min-height:16px}
+.lh-q b{color:#fff0b3;font-weight:500}
+.lh-simr .lh-out{min-height:230px}
+</style>
+<script>
+(function(){
+  let tA=null,tS=null;const stop=()=>{clearInterval(tA);clearInterval(tS);tA=tS=null};
+  /* 공통: 등대 줄 만들기 */
+  function rowsOf(part,h,o){o=o||{};const R=[];
+    if(part==='t')for(let i=0;i<3;i++){const r=[];for(let j=0;j<4-i;j++)r.push({c:' ',p:'t',sp:1});for(let j=0;j<2*i+1;j++)r.push({c:'*',p:'t'});R.push(r)}
+    if(part==='b'){const sp=o.bsp==null?3:o.bsp;for(let i=0;i<h;i++){const r=[];for(let j=0;j<sp;j++)r.push({c:' ',p:'b',sp:1});for(let j=0;j<3;j++)r.push({c:'*',p:'b'});R.push(r)}}
+    if(part==='s'){const r=[];for(let i=0;i<(o.sea||10);i++)r.push({c:'~',p:'s'});R.push(r)}
+    return R}
+  const build=(order,h,o)=>order.split('').flatMap(p=>rowsOf(p,h,o));
+  function html(R,f){f=f||{};return R.map((r,ri)=>'<div class="lh-row">'+r.map((x,ci)=>'<span class="lh-c '+x.p+(x.sp?' sp':'')+(f.on&&f.on(x,ri,ci)?' on':'')+'" data-p="'+x.p+'">'+(x.sp?'·':x.c)+'</span>').join('')+'</div>').join('')}
+
+  /* 1장: 부품 하이라이트 */
+  function hero(r){const H=r.querySelector('#lhHero'),P=r.querySelector('#lhParts');H.innerHTML=html(build('tbs',5));
+    const set=p=>{H.classList.toggle('dim',!!p);H.querySelectorAll('.lh-c').forEach(c=>c.classList.toggle('on',c.dataset.p===p));P.querySelectorAll('.lh-pt').forEach(x=>x.classList.toggle('on',x.dataset.part===p))};
+    P.addEventListener('mouseover',e=>{const x=e.target.closest('.lh-pt');if(x)set(x.dataset.part)});P.addEventListener('mouseleave',()=>set(null));
+    P.addEventListener('click',e=>{const x=e.target.closest('.lh-pt');if(x)set(x.dataset.part)});
+    H.addEventListener('mouseover',e=>{const c=e.target.closest('.lh-c');if(c)set(c.dataset.p)});H.addEventListener('mouseleave',()=>set(null))}
+
+  /* 2장: 바다 */
+  function sea(r){const S=r.querySelector('#lhSea'),I=r.querySelector('#lhSi'),C=r.querySelector('#lhSc'),N=r.querySelector('#lhSn'),NV=r.querySelector('#lhSnv');
+    const full=()=>{const n=+N.value;NV.textContent=n;let h='';for(let i=0;i<n;i++)h+='<span>~<small>'+i+'</small></span>';S.innerHTML=h+'<span class="nlb">↵<small>\\n</small></span>';I.textContent=n;C.className='py-cond f';C.textContent='i('+n+') < '+n+' → 거짓 → 끝! 물결 '+n+'개'};
+    N.addEventListener('input',()=>{clearInterval(tS);tS=null;full()});
+    r.addEventListener('click',e=>{if(!e.target.closest('[data-sea]'))return;clearInterval(tS);const n=+N.value;let i=0;S.innerHTML='';
+      tS=setInterval(()=>{if(!S.isConnected)return stop();S.querySelectorAll('.cur').forEach(x=>x.classList.remove('cur'));
+        if(i<n){I.textContent=i;C.className='py-cond t';C.textContent='i('+i+') < '+n+' → 참 → ~ 찍기';S.insertAdjacentHTML('beforeend','<span class="cur">~<small>'+i+'</small></span>');i++}
+        else{clearInterval(tS);tS=null;I.textContent=i;C.className='py-cond f';C.textContent='i('+i+') < '+n+' → 거짓 → for 끝, 줄바꿈!';S.insertAdjacentHTML('beforeend','<span class="nlb">↵<small>\\n</small></span>')}},300)});
+    full()}
+
+  /* 3장: 몸통 */
+  function body(r){const O=r.querySelector('#lhBody'),N=r.querySelector('#lhBn'),NV=r.querySelector('#lhBnv'),D=r.querySelector('#lhBdot'),T=r.querySelector('#lhBtip');let bsp=3;
+    const draw=()=>{const n=+N.value;NV.textContent=n;O.innerHTML=html(build('bs',n,{bsp}));O.classList.toggle('nodot',!D.checked);
+      T.innerHTML=bsp===3?'✅ 공백 3칸 → 별이 <b>3·4·5번 칸</b>에 서요. 바다(0~9번 칸) 가운데쯤이라 보기 좋아요. 몸통 <b>'+n+'층</b> = 바깥 for '+n+'바퀴.':bsp===0?'❌ 공백 for를 빼면 별이 <b>0번 칸</b>부터 찍혀서 등대가 바다 <b>왼쪽 끝</b>에 붙어요. 나중에 꼭대기와도 안 맞아요!':'🤔 공백 6칸이면 별이 6·7·8번 칸 → 오른쪽으로 치우쳐요. 공백 개수 = 등대가 서는 <b>위치</b>예요.'};
+    N.addEventListener('input',draw);D.addEventListener('change',draw);
+    r.addEventListener('click',e=>{const b=e.target.closest('[data-g="bsp"] button');if(!b)return;b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));bsp=+b.dataset.v;draw()});draw()}
+
+  /* 4장: 꼭대기 */
+  function top(r){const O=r.querySelector('#lhTop'),S=r.querySelector('#lhTsay'),rows=[...r.querySelectorAll('.lh-tt tbody tr')];
+    const nums=[[...'0123456'].map(n=>({c:n,p:'n'}))];
+    const draw=sel=>{const R=nums.concat(build('tb',2));O.innerHTML=html(R,{on:(x,ri)=>sel!=null&&ri===sel+1});O.classList.add('lh-num');O.classList.toggle('dim',sel!=null);
+      O.querySelectorAll('.lh-row:first-child .lh-c').forEach(c=>c.classList.add('on'));
+      rows.forEach((t,i)=>t.classList.toggle('on',i===sel));
+      if(sel!=null){S.innerHTML='i = <b>'+sel+'</b> → 공백 <b>'+(4-sel)+'</b>칸 (0~'+(3-sel)+'번) + 별 <b>'+(2*sel+1)+'</b>개 ('+(4-sel)+'~'+(4+sel)+'번 칸) → 가운데는 늘 <b>4번 칸</b>';S.classList.remove('pop');void S.offsetWidth;S.classList.add('pop')}};
+    rows.forEach((t,i)=>{t.addEventListener('click',()=>draw(i));t.addEventListener('mouseenter',()=>draw(i))});draw(null)}
+
+  /* 5장: 조립 */
+  function asm(r){const O=r.querySelector('#lhAsm'),K=r.querySelector('#lhStack'),S=r.querySelector('#lhAsay');
+    const nm={t:['③ 꼭대기층','for i &lt; 3'],b:['② 등대 몸통','for i &lt; 5'],s:['① 바다','for i &lt; 10']};
+    const say={tbs:'✅ 위에서부터 꼭대기 → 몸통 → 바다. 화면 순서와 코드 순서가 같아서 <b>등대가 똑바로</b> 서요!',sbt:'🙃 만든 순서 그대로 쓰면 바다가 <b>맨 위</b>로! 콘솔은 위에서 아래로만 쓰니까 <b>거꾸로 뒤집힌 등대</b>가 돼요.',bts:'😵 몸통이 먼저 나오고 그 아래에 꼭대기가 → 지붕이 <b>몸통 밑</b>에 붙었어요.',tsb:'🌊 바다가 등대 <b>한가운데</b>를 가로질러요. 바다는 맨 마지막이어야 해요.'};
+    const draw=o=>{K.innerHTML=o.split('').map((p,i)=>'<div class="'+p+'" style="animation-delay:'+(i*.08)+'s"><small>코드 '+(i+1)+'번째</small>'+nm[p][0]+' <span class="mu">'+nm[p][1]+'</span></div>').join('');O.innerHTML=html(build(o,5));
+      S.innerHTML=say[o];S.classList.remove('pop');void S.offsetWidth;S.classList.add('pop');r.querySelectorAll('#lhOrd button').forEach(b=>b.classList.toggle('on',b.dataset.o===o))};
+    r.querySelector('#lhOrd').addEventListener('click',e=>{const b=e.target.closest('[data-o]');if(b)draw(b.dataset.o)});draw('tbs')}
+
+  /* 6장: 입력 */
+  function input(r){const I=r.querySelector('#lhIn'),A=r.querySelector('#lhAsk'),O=r.querySelector('#lhTry'),V=r.querySelector('#lhHv');
+    const go=v=>{let h=parseInt(v,10);if(isNaN(h)){I.focus();return}h=Math.max(1,Math.min(15,h));I.value=h;V.textContent=h;V.classList.remove('bump');void V.offsetWidth;V.classList.add('bump');A.classList.add('done');
+      const R=build('tbs',h);O.innerHTML='';let k=0;clearInterval(tA);
+      tA=setInterval(()=>{if(!O.isConnected)return stop();if(k>=R.length){clearInterval(tA);tA=null;return}O.insertAdjacentHTML('beforeend',html([R[k]]));k++},70)};
+    r.querySelector('#lhEnt').addEventListener('click',()=>go(I.value));I.addEventListener('keydown',e=>{if(e.key==='Enter')go(I.value)});I.addEventListener('input',()=>A.classList.remove('done'));
+    r.querySelectorAll('[data-h]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.h)))}
+
+  /* 7장: 디버거 */
+  function dbg(r){
+    const K=s=>'<b>'+s+'</b>',cm=s=>'<span class="c">'+s+'</span>';
+    const L=[['','in','<b>int</b> height;'],['q','in','printf_s("등대의 높이를 입력하세요 : ");'],['scan','in','scanf_s("%d", &amp;height);'],['','',''],
+      ['','t',cm('// 3. 꼭대기층')],['t-o','t',K('for')+' ('+K('int')+' i = 0; i &lt; 3; i++)'],['','t','{'],['t-s','t','\t'+K('for')+' ('+K('int')+' j = 0; j &lt; 4 - i; j++)'],['t-sp','t','\t\tprintf_s(" ");'],['t-z','t','\t'+K('for')+' ('+K('int')+' j = 0; j &lt; 2 * i + 1; j++)'],['t-p','t','\t\tprintf_s("*");'],['t-nl','t','\tprintf_s("\\n");'],['','t','}'],['','',''],
+      ['','b',cm('// 2. 등대 만들기')],['b-o','b',K('for')+' ('+K('int')+' i = 0; i &lt; height; i++)'],['','b','{'],['b-s','b','\t'+K('for')+' ('+K('int')+' j = 0; j &lt; 3; j++)'],['b-sp','b','\t\tprintf_s(" ");'],['b-z','b','\t'+K('for')+' ('+K('int')+' j = 0; j &lt; 3; j++)'],['b-p','b','\t\tprintf_s("*");'],['b-nl','b','\tprintf_s("\\n");'],['','b','}'],['','',''],
+      ['','s',cm('// 1. 바다 만들기')],['s-o','s',K('for')+' ('+K('int')+' i = 0; i &lt; 10; i++)'],['s-p','s','\tprintf_s("~");'],['s-nl','s','printf_s("\\n");'],['','',''],['end','',K('return')+' 0;']];
+    const C=r.querySelector('#lhCode');C.innerHTML=L.map(x=>'<span class="ln" data-l="'+x[0]+'" data-sec="'+x[1]+'">'+(x[2]||' ')+'</span>').join('');
+    const lines=[...C.querySelectorAll('.ln')],$=s=>r.querySelector(s),rg=$('#lhRange'),out=$('#lhDout'),dq=$('#lhDq'),say=$('#lhSay'),vi=$('#lhVi'),vj=$('#lhVj'),cond=$('#lhCond'),part=$('#lhPart'),num=$('#lhStepN'),pb=$('#lhPlay'),dot=$('#lhDdot');
+    const PN={in:'💬 입력 받기',t:'③ 꼭대기층',b:'② 등대 몸통',s:'① 바다'};
+    let H=5,steps=[],k=0;
+    function mk(){steps=[];
+      steps.push({l:'q',p:'in',m:'💬 질문을 화면에 출력해요',c:'-'});
+      steps.push({l:'scan',p:'in',m:'⌨️ 사용자가 <b>'+H+'</b>를 입력 → height 상자에 저장!',c:'height = '+H});
+      for(let i=0;i<3;i++){for(let j=0;j<4-i;j++)steps.push({l:'t-sp',p:'t',i,j,ch:' ',c:'j('+j+') < 4 - i = '+(4-i)+' → 참',m:'공백 찍기 ('+(j+1)+' / '+(4-i)+'칸)'});
+        for(let j=0;j<2*i+1;j++)steps.push({l:'t-p',p:'t',i,j,ch:'*',c:'j('+j+') < 2×i+1 = '+(2*i+1)+' → 참',m:'⭐ 별 찍기 ('+(j+1)+' / '+(2*i+1)+'개)'});
+        steps.push({l:'t-nl',p:'t',i,nl:1,c:'별 for 끝',m:'↵ 꼭대기 '+(i+1)+'번째 줄 완성! 다음 줄로'})}
+      for(let i=0;i<H;i++){for(let j=0;j<3;j++)steps.push({l:'b-sp',p:'b',i,j,ch:' ',c:'j('+j+') < 3 → 참',m:'공백 찍기 ('+(j+1)+' / 3칸)'});
+        for(let j=0;j<3;j++)steps.push({l:'b-p',p:'b',i,j,ch:'*',c:'j('+j+') < 3 → 참',m:'🧱 몸통 별 ('+(j+1)+' / 3개)'});
+        steps.push({l:'b-nl',p:'b',i,nl:1,c:'i('+i+') < height('+H+')',m:'↵ 몸통 '+(i+1)+'층 완성 ('+(i+1)+' / '+H+')'})}
+      for(let i=0;i<10;i++)steps.push({l:'s-p',p:'s',i,ch:'~',c:'i('+i+') < 10 → 참',m:'🌊 물결 ('+(i+1)+' / 10)'});
+      steps.push({l:'s-nl',p:'s',nl:1,c:'i(10) < 10 → 거짓',m:'↵ 바다 완성!'});
+      steps.push({l:'end',p:'',c:'끝',m:'🎉 등대 완성! 꼭대기 3줄 + 몸통 '+H+'줄 + 바다 1줄 = <b>'+(H+4)+'줄</b>'});
+      rg.max=steps.length;k=0}
+    function render(){rg.value=k;num.textContent=k+' / '+steps.length;
+      const s=k?steps[k-1]:null;
+      lines.forEach(l=>{l.classList.toggle('hot',!!s&&l.dataset.l===s.l);['t','b','s','in'].forEach(p=>l.classList.toggle('sec-'+p,!!s&&s.p===p&&l.dataset.sec===p))});
+      {const hl=C.querySelector(".ln.hot");if(hl)C.scrollTop=Math.max(0,hl.offsetTop-C.clientHeight/2)}
+      dq.innerHTML=k>=1?'등대의 높이를 입력하세요 : '+(k>=2?'<b>'+H+'</b>':'▌'):'';
+      const R=[[]];let last=null;for(let x=0;x<k;x++){const t=steps[x];if(t.ch){R[R.length-1].push({c:t.ch,p:t.p,sp:t.ch===' '});last=[R.length-1,R[R.length-1].length-1]}if(t.nl)R.push([])}
+      out.innerHTML=html(R);out.classList.toggle('nodot',!dot.checked);
+      if(last&&s&&s.ch){const c=out.querySelectorAll('.lh-row')[last[0]].children[last[1]];if(c)c.classList.add('cur')}
+      if(!s){part.className='lh-part';part.textContent='준비';vi.textContent=vj.textContent='-';cond.className='py-cond';cond.textContent='-';say.innerHTML='▶ <b>다음</b> 버튼을 눌러 시작해요';return}
+      part.className='lh-part '+s.p;part.textContent=PN[s.p]||'🏁 끝';vi.textContent=s.i==null?'-':s.i;vj.textContent=s.j==null?'-':s.j;
+      cond.className='py-cond '+(/거짓/.test(s.c)?'f':'t');cond.textContent=s.c;say.innerHTML=s.m;say.classList.remove('pop');void say.offsetWidth;say.classList.add('pop')}
+    const halt=()=>{clearInterval(tA);tA=null;pb.textContent='⏵ 자동'};
+    r.addEventListener('click',e=>{const sb=e.target.closest('[data-g="dh"] button');if(sb){halt();sb.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===sb));H=+sb.dataset.v;mk();render();return}
+      const b=e.target.closest('[data-ds]');if(!b)return;const a=b.dataset.ds;if(a!=='play')halt();
+      if(a==='next')k=Math.min(steps.length,k+1);if(a==='prev')k=Math.max(0,k-1);if(a==='reset')k=0;
+      if(a==='line'){let x=k;while(x<steps.length&&!steps[x].nl&&steps[x].l!=='scan')x++;k=Math.min(steps.length,x+1)}
+      if(a==='part'){const cp=k?steps[k-1].p:null;let x=k;while(x<steps.length&&steps[x].p===cp)x++;const np=x<steps.length?steps[x].p:null;while(x<steps.length&&steps[x].p===np)x++;k=Math.min(steps.length,x)}
+      if(a==='play'){if(tA)halt();else{if(k>=steps.length)k=0;pb.textContent='⏸ 멈춤';tA=setInterval(()=>{if(!rg.isConnected)return stop();if(k>=steps.length)return halt();k++;render()},260)}}
+      render()});
+    rg.addEventListener('input',()=>{halt();k=+rg.value;render()});dot.addEventListener('change',render);
+    mk();render()}
+
+  /* 8장: 퀴즈 */
+  function quiz(r){
+    const Q=[
+      {q:'바다 for (i = 0; i &lt; 10; i++) 는 ~ 를 몇 개 찍을까요?',a:['9개','10개','11개'],c:1,w:'i = 0 ~ 9 → <b>10개</b>. 0부터 세면 “&lt; 10”이 딱 10번이에요.'},
+      {q:'꼭대기에서 i = 1 일 때, 공백과 별은?',a:['공백 3 · 별 3','공백 4 · 별 1','공백 2 · 별 5'],c:0,w:'4 − 1 = <b>3</b>, 2 × 1 + 1 = <b>3</b>.'},
+      {q:'높이에 7을 입력하면 화면은 모두 몇 줄일까요?',a:['7줄','10줄','11줄'],c:2,w:'꼭대기 3 + 몸통 7 + 바다 1 = <b>11줄</b>.'},
+      {q:'코드를 바다 → 몸통 → 꼭대기 순서로 쓰면?',a:['똑같이 나와요','등대가 뒤집혀요','에러가 나요'],c:1,w:'콘솔은 위에서 아래로 쓰니까 바다가 맨 위 → <b>뒤집힌 등대</b>. 에러는 안 나요!'},
+      {q:'scanf_s("%d", &amp;height) 의 &amp; 는 무슨 뜻?',a:['그리고(and)','height 상자의 주소','곱하기'],c:1,w:'&amp; = <b>주소</b>. “이 상자에 넣어 줘”라고 위치를 알려 줘요.'}];
+    const W=r.querySelector('#lhQuiz'),S=r.querySelector('#lhQs');
+    W.innerHTML=Q.map((x,n)=>'<div class="py-q" data-q="'+n+'"><h5><small>Q'+(n+1)+'</small>'+x.q+'</h5><div class="ans">'+x.a.map((a,m)=>'<button data-a="'+m+'">'+a+'</button>').join('')+'</div><div class="why"></div></div>').join('');
+    W.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const card=b.closest('.py-q'),x=Q[+card.dataset.q],m=+b.dataset.a;if(card.classList.contains('done'))return;
+      if(m===x.c){b.className='ok';card.classList.add('done');card.querySelector('.why').innerHTML='⭕ 정답! '+x.w}else{b.className='';void b.offsetWidth;b.className='no';card.querySelector('.why').innerHTML='🤔 다시 생각해 봐요 — 위의 버튼으로 확인해 봐도 좋아요'}
+      const d=W.querySelectorAll('.py-q.done').length;S.textContent=d+' / '+Q.length+' 정답'+(d===Q.length?' · 🎉 LV.04 CLEAR!':'');S.classList.toggle('all',d===Q.length)})}
+
+  function tabs(r){r.addEventListener('click',e=>{const b=e.target.closest('.py-tabs .py-tabb button');if(!b)return;const w=b.closest('[data-tabs]'),n=+b.dataset.t;
+    w.querySelectorAll('.py-tabb button').forEach(x=>x.classList.toggle('on',x===b));w.querySelectorAll('.py-pane').forEach((p,i)=>p.classList.toggle('on',i===n))})}
+
+  const mbd=document.getElementById('mbd');
+  new MutationObserver(()=>{const r=mbd.querySelector('[data-anim="lh01"]');stop();if(r){tabs(r);hero(r);sea(r);body(r);top(r);asm(r);input(r);dbg(r);quiz(r)}}).observe(mbd,{childList:true});
 })();
 </script>
 </body></html>
